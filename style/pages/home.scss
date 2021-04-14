@@ -1,0 +1,18 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/animations";
+
+@import "../base/base";
+@import "../base/typography";
+
+@import "../layouts/header";
+@import "../layouts/footer";
+
+@import "../components/hero-section";
+@import "../components/articles-section";
+@import "../components/last-news-section";
+@import "../components/products-section";
+@import "../components/trainings-section";
+@import "../components/infos-for-farmers-section";
+@import "../components/our-partners-section";
+@import "../components/our-sales-points-section";

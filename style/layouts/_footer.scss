@@ -1,0 +1,49 @@
+
+/* FOOTER FOR BIG SCREENS */
+footer#contact.big-screen {
+    width: 100vw;
+    height: auto; 
+    margin: 0px;
+    padding: 30px 100px;
+    background-color: $blue-color;
+    color: $white-color;
+    // border: $border-check-2;
+    // display: flex;
+
+    
+    // @media only screen and (max-width: 1260px) {
+    //   padding: 60px 50px 20px 50px;
+    // }
+    
+    
+    
+    // article{  
+
+      
+
+    // }
+
+}
+
+
+
+/* MEDIA QUERIES STARTS */
+/* 1160px */
+// @media only screen and (max-width: 1160px) {
+//     footer.big-screen {
+//        display: none;
+//      }
+//     footer.small-screen {
+//        display: block;
+//      }
+//  }
+// /* 1161px */
+// @media only screen and (min-width: 1161px) {
+//      footer.big-screen {
+//         display: block;
+//       }
+//      footer.small-screen {
+//         display: none;
+//       }
+//  }
+ /* MEDIA QUERIES ENDS */

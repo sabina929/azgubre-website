@@ -1,0 +1,29 @@
+body{
+    font-family: $font-family-1;
+    color: $dark-color;
+    font-size: $paragraph-font-size-1;
+}
+
+.heading-primary{
+    font-family: $font-family-1;
+    font-size: $heading-1-font-size;
+    line-height: 65px;
+    font-weight: 400;
+    color: $dark-color;
+}
+.heading-secondary{
+    font-family: $font-family-1;
+    font-size: $heading-2-font-size;
+    font-weight: 400;
+    color: $gray-color;
+}
+
+
+.paragraph{
+    font-family: $font-family-1;
+    font-size: $paragraph-font-size-1;
+    color: $dark-color;
+    line-height: 30px;
+ 
+}
+

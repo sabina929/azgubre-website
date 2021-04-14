@@ -1,0 +1,9 @@
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin transform-center {
+    transform: translate(-50%, -50%);
+}
