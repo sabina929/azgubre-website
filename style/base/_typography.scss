@@ -54,6 +54,29 @@ body{
             background-color: rgba($blue-color, 0.8);
         }
     }
+    &.white{
+        color: $white-color;
+        width: 300px;
+        line-height: 36px;
+        
+        &::before{
+            top:25%;
+            background-color: rgba($white-color, 0.8);
+        }
+        &::after{
+            top:25%;
+            background-color: rgba($white-color, 0.8);
+        }
+        
+        &.one-line{
+            &::before{
+                top:50%;
+            }
+            &::after{
+                top:50%;
+            }
+        }
+    }
 }
 .heading-secondary{
     font-family: $font-family-1;

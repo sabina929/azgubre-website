@@ -2,7 +2,65 @@ main{
  
     section#our-sales-points{
     width: 100%;
-    height: 100vh; 
+    height: auto; 
+    background-color: $green-color;
+    padding: 48px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+        &:not(:last-child){
+            margin-right: 48px;
+        }
+
+        &:nth-child(2){
+            color: $white-color;
+
+            h2.heading-primary.white.one-line{
+                margin-bottom: 48px;
+            }
+            h3{
+                margin-bottom: 12px;
+            }
+            p{
+                margin-bottom: 48px;
+            }
+
+            div.dropdown-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                p{
+                    margin-bottom: 24px;
+                }
+                div.dropdown{
+                    width: 360px;
+                    height: 50px;
+                    background-color: $white-color;
+                    color: $blue-color;
+                    border-radius: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 6px 24px;
+
+                    p{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
   
     // border: $border-check-2;
 
@@ -10,9 +68,6 @@ main{
     //     margin: 0px 0px 190px 0px;
     // }
  
-    
-    
-    
    
     }
 }

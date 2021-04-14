@@ -4,6 +4,17 @@ main{
     width: 100%;
     height: auto; 
     padding: 48px;
+
+    position: relative;
+    z-index: 1;
+
+    img.decoration{
+        position: absolute;
+        transform: translate(0%, -50%);
+        top: 220px;
+        right: -37px;
+        z-index: -1;
+    }
   
     div.heading{
         display: flex;
@@ -55,15 +66,17 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding: 24px 48px 48px 80px;
         article{
-            background-color: $white-color;
+            background-color: transparent;
             padding: 10px;
             transition: all .3s ease;
-
+            
             &:hover,&:focus{
-                box-shadow: 0 0 40px 2px rgba($dark-color, 0.24);
+                background-color: $white-color;
+                padding: 10px;
+                box-shadow: 0 4px 42px 2px rgba($dark-color, 0.15);
             }
 
             &:not(:last-child){
@@ -82,6 +95,7 @@ main{
             }
 
             div.content-container{
+                margin-bottom: 8px;
 
                 a{
                     text-decoration: none;

@@ -5,13 +5,78 @@ main{
     height: auto; 
     background-color: $light-color;
     padding: 48px;
+    position: relative;
+    z-index: 1;
 
+    img.decoration{
+        position: absolute;
+        transform: translate(0%, -50%) rotateY(180deg);
+        top: 220px;
+        left: -68px;
+        opacity: 0.3;
+        z-index: -1;
+    }
 
     div.heading{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    div.products-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 48px;
+
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:not(:last-child){
+                margin-right: 48px;
+            }
+
+            div.img-container{
+                border: 1px solid #0c3f97;
+                border-radius: 50%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 24px;
+                // img{
+                // }
+            }
+
+            a{
+                text-decoration: none;
+                color: $blue-color;
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 700;
+                text-align: center;
+                width: 280px;
+                
+                &:hover,&:focus{
+                    text-decoration: underline;
+                    
+                }
+
+                p{
+                    color: $blue-color;
+                    font-size: 24px;
+                    line-height: 36px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+        }
     }
     // border: $border-check-2;
 

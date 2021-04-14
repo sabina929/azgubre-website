@@ -77,6 +77,30 @@ body {
   background-color: rgba(0, 44, 122, 0.8);
 }
 
+.heading-primary.white {
+  color: #ffffff;
+  width: 300px;
+  line-height: 36px;
+}
+
+.heading-primary.white::before {
+  top: 25%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.heading-primary.white::after {
+  top: 25%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.heading-primary.white.one-line::before {
+  top: 50%;
+}
+
+.heading-primary.white.one-line::after {
+  top: 50%;
+}
+
 .heading-secondary {
   font-family: "Roboto", sans-serif;
   font-size: 64px;
@@ -1060,6 +1084,17 @@ main section#last-news {
   width: 100%;
   height: auto;
   padding: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+main section#last-news img.decoration {
+  position: absolute;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  top: 220px;
+  right: -37px;
+  z-index: -1;
 }
 
 main section#last-news div.heading {
@@ -1148,22 +1183,24 @@ main section#last-news div.news-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 24px 48px 48px 80px;
 }
 
 main section#last-news div.news-container article {
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 10px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
 main section#last-news div.news-container article:hover, main section#last-news div.news-container article:focus {
-  -webkit-box-shadow: 0 0 40px 2px rgba(54, 52, 53, 0.24);
-          box-shadow: 0 0 40px 2px rgba(54, 52, 53, 0.24);
+  background-color: #ffffff;
+  padding: 10px;
+  -webkit-box-shadow: 0 4px 42px 2px rgba(54, 52, 53, 0.15);
+          box-shadow: 0 4px 42px 2px rgba(54, 52, 53, 0.15);
 }
 
 main section#last-news div.news-container article:not(:last-child) {
@@ -1178,6 +1215,10 @@ main section#last-news div.news-container article div.img-container {
 main section#last-news div.news-container article div.img-container img {
   width: 100%;
   height: auto;
+}
+
+main section#last-news div.news-container article div.content-container {
+  margin-bottom: 8px;
 }
 
 main section#last-news div.news-container article div.content-container a {
@@ -1236,6 +1277,18 @@ main section#products {
   height: auto;
   background-color: #fafafa;
   padding: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+main section#products img.decoration {
+  position: absolute;
+  -webkit-transform: translate(0%, -50%) rotateY(180deg);
+          transform: translate(0%, -50%) rotateY(180deg);
+  top: 220px;
+  left: -68px;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 main section#products div.heading {
@@ -1254,23 +1307,604 @@ main section#products div.heading {
           align-items: center;
 }
 
+main section#products div.products-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 48px;
+}
+
+main section#products div.products-container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#products div.products-container article:not(:last-child) {
+  margin-right: 48px;
+}
+
+main section#products div.products-container article div.img-container {
+  border: 1px solid #0c3f97;
+  border-radius: 50%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+main section#products div.products-container article a {
+  text-decoration: none;
+  color: #002c7a;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  width: 280px;
+}
+
+main section#products div.products-container article a:hover, main section#products div.products-container article a:focus {
+  text-decoration: underline;
+}
+
+main section#products div.products-container article a p {
+  color: #002c7a;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
 main section#trainings {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding: 80px 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#trainings article {
+  width: 420px;
+  height: 280px;
+  border: 1px solid #487b2f;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main section#trainings article:not(:last-child) {
+  margin-right: 120px;
+}
+
+main section#trainings article div.label {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) rotateZ(-90deg);
+          transform: translate(-50%, -50%) rotateZ(-90deg);
+  background-color: #487b2f;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 24px;
+}
+
+main section#trainings article div.label p {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  text-align: center;
+}
+
+main section#trainings article div.img-container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#trainings article div.img-container img.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main section#trainings article:nth-child(1) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 12px 36px 12px 56px;
+}
+
+main section#trainings article:nth-child(1) div.label {
+  top: 94px;
+  left: 0px;
+}
+
+main section#trainings article:nth-child(1) div.img-container {
+  top: 56px;
+  right: -36%;
+}
+
+main section#trainings article:nth-child(1) p {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  color: #363435;
+}
+
+main section#trainings article:nth-child(1) p.date {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color: #7b7b7b;
+}
+
+main section#trainings article:nth-child(2) {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 12px 56px 12px 36px;
+}
+
+main section#trainings article:nth-child(2) div.label {
+  top: 94px;
+  right: -142px;
+}
+
+main section#trainings article:nth-child(2) div.img-container {
+  top: 56px;
+  left: 24%;
+}
+
+main section#trainings article:nth-child(2) p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  color: #363435;
+}
+
+main section#trainings article:nth-child(2) p.date {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color: #7b7b7b;
 }
 
 main section#infos-for-farmers {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding: 48px;
+  background-color: #487b2f;
+  position: relative;
+  z-index: 1;
+}
+
+main section#infos-for-farmers img.decoration {
+  position: absolute;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  top: 54px;
+  right: -140px;
+  z-index: -1;
+}
+
+main section#infos-for-farmers div.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#infos-for-farmers div.products-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 64px 48px 24px 48px;
+}
+
+main section#infos-for-farmers div.products-container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#infos-for-farmers div.products-container article:not(:last-child) {
+  margin-right: 120px;
+}
+
+main section#infos-for-farmers div.products-container article div.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+main section#infos-for-farmers div.products-container article a {
+  text-decoration: none;
+  text-align: center;
+  width: auto;
+  height: 50px;
+  background-color: transparent;
+  padding: 8px 24px;
+  border-radius: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: unset;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #5da23a;
+  color: #487b2f;
+}
+
+main section#infos-for-farmers div.products-container article a p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 97%;
+  line-height: 16px;
+}
+
+main section#infos-for-farmers div.products-container article a:hover, main section#infos-for-farmers div.products-container article a:focus {
+  background-color: #ffffff;
+}
+
+main section#infos-for-farmers div.products-container article a:hover p, main section#infos-for-farmers div.products-container article a:focus p {
+  color: #487b2f;
+}
+
+main section#infos-for-farmers div.products-container article:nth-child(2) a {
+  padding: 8px 12px;
+}
+
+main section#infos-for-farmers div.products-container article:nth-child(3) a {
+  padding: 8px 8px;
+  width: 190px;
+}
+
+main section#infos-for-farmers div.products-container article:nth-child(3) a p {
+  width: 64%;
 }
 
 main section#our-partners {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding: 64px;
+}
+
+main section#our-partners div.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#our-partners div.partners-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 48px;
+}
+
+main section#our-partners div.partners-container div.left-arrow {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 48px;
+}
+
+main section#our-partners div.partners-container div.partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#our-partners div.partners-container div.partners article {
+  cursor: pointer;
+}
+
+main section#our-partners div.partners-container div.partners article:not(:last-child) {
+  margin-right: 48px;
+}
+
+main section#our-partners div.partners-container div.right-arrow {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 48px;
 }
 
 main section#our-sales-points {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  background-color: #487b2f;
+  padding: 48px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#our-sales-points article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+main section#our-sales-points article:not(:last-child) {
+  margin-right: 48px;
+}
+
+main section#our-sales-points article:nth-child(2) {
+  color: #ffffff;
+}
+
+main section#our-sales-points article:nth-child(2) h2.heading-primary.white.one-line {
+  margin-bottom: 48px;
+}
+
+main section#our-sales-points article:nth-child(2) h3 {
+  margin-bottom: 12px;
+}
+
+main section#our-sales-points article:nth-child(2) p {
+  margin-bottom: 48px;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container p {
+  margin-bottom: 24px;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown {
+  width: 360px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #002c7a;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 24px;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown p {
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=home.css.map */
