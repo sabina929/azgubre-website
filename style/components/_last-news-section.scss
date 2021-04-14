@@ -3,7 +3,15 @@ main{
     section#last-news{
     width: 100%;
     height: 100vh; 
+    padding: 48px;
   
+    div.heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     // border: $border-check-2;
 
     // @media only screen and (max-width: 760px) {
@@ -11,7 +19,13 @@ main{
     // }
  
     
-    
+    div.btn-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        
+    }
     
    
     }
