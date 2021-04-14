@@ -1058,7 +1058,7 @@ main section#articles div.btn-container {
 
 main section#last-news {
   width: 100%;
-  height: 100vh;
+  height: auto;
   padding: 48px;
 }
 
@@ -1076,6 +1076,143 @@ main section#last-news div.heading {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main section#last-news div.indicators-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 48px;
+}
+
+main section#last-news div.indicators-container svg#left-arrow {
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+main section#last-news div.indicators-container svg#right-arrow {
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+main section#last-news div.indicators-container div.indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#last-news div.indicators-container div.indicators span {
+  width: 24px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #0c3f97;
+  cursor: pointer;
+}
+
+main section#last-news div.indicators-container div.indicators span.active {
+  background-color: #b1b1b1;
+}
+
+main section#last-news div.indicators-container div.indicators span:not(:last-child) {
+  margin-right: 18px;
+}
+
+main section#last-news div.news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 48px 48px 80px;
+}
+
+main section#last-news div.news-container article {
+  background-color: #ffffff;
+  padding: 10px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main section#last-news div.news-container article:hover, main section#last-news div.news-container article:focus {
+  -webkit-box-shadow: 0 0 40px 2px rgba(54, 52, 53, 0.24);
+          box-shadow: 0 0 40px 2px rgba(54, 52, 53, 0.24);
+}
+
+main section#last-news div.news-container article:not(:last-child) {
+  margin-right: 48px;
+}
+
+main section#last-news div.news-container article div.img-container {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+main section#last-news div.news-container article div.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+main section#last-news div.news-container article div.content-container a {
+  text-decoration: none;
+  color: #002c7a;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+main section#last-news div.news-container article div.content-container a:hover, main section#last-news div.news-container article div.content-container a:focus {
+  text-decoration: underline;
+}
+
+main section#last-news div.news-container article div.content-container a p {
+  color: #002c7a;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+main section#last-news div.news-container article div.content-container p.date {
+  color: #7b7b7b;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+main section#last-news div.news-container article div.content-container p {
+  color: #363435;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 main section#last-news div.btn-container {
@@ -1096,8 +1233,25 @@ main section#last-news div.btn-container {
 
 main section#products {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #fafafa;
+  padding: 48px;
+}
+
+main section#products div.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main section#trainings {
