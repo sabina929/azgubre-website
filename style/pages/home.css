@@ -1846,6 +1846,18 @@ main section#our-sales-points article:not(:last-child) {
   margin-right: 48px;
 }
 
+main section#our-sales-points article:nth-child(1) svg path {
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+main section#our-sales-points article:nth-child(1) svg path:hover, main section#our-sales-points article:nth-child(1) svg path:focus {
+  fill: #ffffff;
+  -webkit-filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.24));
+          filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.24));
+}
+
 main section#our-sales-points article:nth-child(2) {
   color: #ffffff;
 }

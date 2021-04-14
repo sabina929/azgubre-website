@@ -21,6 +21,19 @@ main{
             margin-right: 48px;
         }
 
+        &:nth-child(1){
+            svg{
+                path{
+                    cursor: pointer;
+                    transition: all .2s ease;
+
+                    &:hover,&:focus{
+                        fill: $white-color;
+                        filter: drop-shadow(0 3px 15px rgba(0,0,0,0.24));
+                    }
+                }
+            }
+        }
         &:nth-child(2){
             color: $white-color;
 

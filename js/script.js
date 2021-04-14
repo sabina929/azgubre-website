@@ -1,1 +1,1 @@
-const languagesContainer = document.querySelector('li.languages')
+// const languagesContainer = document.querySelector('li.languages')
