@@ -1,13 +1,19 @@
 main{
  
     section#products{
-    width: 100%;
-    height: auto; 
-    background-color: $bg-color-1;
-    padding: 48px;
-    position: relative;
-    z-index: 1;
-
+        width: 100%;
+        height: auto; 
+        background-color: $bg-color-1;
+        padding: 48px;
+        position: relative;
+        z-index: 1;
+        
+        @media only screen and (max-width: 1100px) {
+            padding: 48px 90px;
+        }
+        @media only screen and (max-width: 1000px) {
+            padding: 48px;
+        }
     img.decoration{
         position: absolute;
         transform: translate(0%, -50%); 
@@ -29,15 +35,45 @@ main{
         justify-content: center;
         align-items: flex-start;
         padding: 48px;
+        
+        @media only screen and (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
 
         article{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            width: 33.33%;
+            @media only screen and (max-width: 1000px) {
+                width: 60%;
+            }
+            @media only screen and (max-width: 700px) {
+                width: 80%;
+            }
+            @media only screen and (max-width: 600px) {
+                width: 90%;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 100%;
+            }
+            
             &:not(:last-child){
                 margin-right: 48px;
+                
+                @media only screen and (max-width: 1000px) {
+                    margin-right: 0px;
+                    margin-bottom: 48px;
+                }
+
+                @media only screen and (max-width: 460px) {
+                    margin-bottom: 36px;
+                }
+
             }
 
             div.img-container{
@@ -49,8 +85,44 @@ main{
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 24px;
-                // img{
-                // }
+                width: 100%;
+                
+                @media only screen and (max-width: 1100px) {
+                    padding: 15px;
+                }
+                @media only screen and (max-width: 1000px) {
+                    padding: 24px;
+                }
+                @media only screen and (max-width: 600px) {
+                    padding: 19px;
+                }
+                @media only screen and (max-width: 500px) {
+                    padding: 15px;
+                }
+                @media only screen and (max-width: 460px) {
+                    margin-bottom: 20px;
+                    width: auto;
+                }
+                @media only screen and (max-width: 380px) {
+                    padding: 12px;
+                }
+                
+                img{
+                    width: 100%;
+                    @media only screen and (max-width: 460px) {
+                        width: 260px;
+                        height: 260px;
+                    }
+                    @media only screen and (max-width: 380px) {
+                        width: 240px;
+                        height: 240px;
+                    }
+                    @media only screen and (max-width: 360px) {
+                        width: 220px;
+                        height: 220px;
+                    }
+                    
+                }
             }
 
             a{
@@ -62,6 +134,10 @@ main{
                 text-align: center;
                 width: 280px;
                 
+                @media only screen and (max-width: 380px) {
+                    width: 270px;
+                    
+                }
                 &:hover,&:focus{
                     text-decoration: underline;
                     
@@ -73,6 +149,21 @@ main{
                     line-height: 36px;
                     font-weight: 700;
                     text-align: center;
+                    
+                    @media only screen and (max-width: 460px) {
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                    @media only screen and (max-width: 380px) {
+                        font-size: 20px;
+                        line-height: 30px;
+                        
+                    }
+                    @media only screen and (max-width: 360px) {
+                        font-size: 18px;
+                        line-height: 28px;
+                      
+                    }
                 }
             }
         }
