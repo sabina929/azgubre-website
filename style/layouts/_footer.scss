@@ -81,6 +81,14 @@ footer#contact.big-screen {
                                 letter-spacing: 1px;
                                 text-decoration: none;
                                 text-transform: uppercase;
+                                transition: all .1s linear;
+
+                                &:hover,&:focus{
+                                    text-shadow: 0.7px 0px white;
+                                  }
+                                  a:active{
+                                    text-shadow: 0.7px 0px white;
+                                  }
                             }
                         }
                     }
@@ -145,6 +153,22 @@ footer#contact.big-screen {
         }
     }
 
+    div.lower{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 48px;
+
+        p{
+            font-family: $font-family-1;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.6px;
+            color: $white-color;
+        }
+
+    }
 
     // border: $border-check-2;
     // display: flex;

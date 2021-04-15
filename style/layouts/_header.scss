@@ -142,19 +142,15 @@ header.big-screen {
             }
 
             &.active{
-              // font-weight: 500;
               text-shadow: 0.7px 0px white;
               a{
-                // font-weight: 500;
                 text-shadow: 0.7px 0px white;
               }
             }
             &:hover,&:focus{
-              // font-weight: 500;
               text-shadow: 0.7px 0px white;
             }
-            a:hover,a:focus{
-              // font-weight: 500;
+            a:active{
               text-shadow: 0.7px 0px white;
             }
           }

@@ -376,7 +376,7 @@ header.big-screen div.upper nav ul li:hover, header.big-screen div.upper nav ul 
   text-shadow: 0.7px 0px white;
 }
 
-header.big-screen div.upper nav ul li a:hover, header.big-screen div.upper nav ul li a:focus {
+header.big-screen div.upper nav ul li a:active {
   text-shadow: 0.7px 0px white;
 }
 
@@ -615,6 +615,16 @@ footer#contact.big-screen div.upper article:nth-child(2) nav ul li a, footer#con
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+footer#contact.big-screen div.upper article:nth-child(2) nav ul li a:hover, footer#contact.big-screen div.upper article:nth-child(2) nav ul li a:focus, footer#contact.big-screen div.upper article:nth-child(3) nav ul li a:hover, footer#contact.big-screen div.upper article:nth-child(3) nav ul li a:focus {
+  text-shadow: 0.7px 0px white;
+}
+
+footer#contact.big-screen div.upper article:nth-child(2) nav ul li a a:active, footer#contact.big-screen div.upper article:nth-child(3) nav ul li a a:active {
+  text-shadow: 0.7px 0px white;
 }
 
 footer#contact.big-screen div.upper article:nth-child(4) {
@@ -697,6 +707,31 @@ footer#contact.big-screen div.upper article:nth-child(4) div.social-icons a:hove
 footer#contact.big-screen div.upper article:nth-child(4) p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+footer#contact.big-screen div.lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 48px;
+}
+
+footer#contact.big-screen div.lower p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.6px;
   color: #ffffff;
