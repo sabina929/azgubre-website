@@ -1,0 +1,11 @@
+<svg id="play-button" xmlns="http://www.w3.org/2000/svg" width="96.04" height="96.041" viewBox="0 0 96.04 96.041">
+  <g id="Group_977" data-name="Group 977">
+    <g id="Group_976" data-name="Group 976">
+      <path id="Path_11680" data-name="Path 11680" d="M48.02,0A48.02,48.02,0,1,0,96.04,48.02,48.074,48.074,0,0,0,48.02,0Zm0,92.039A44.019,44.019,0,1,1,92.039,48.02,44.068,44.068,0,0,1,48.02,92.039Z" fill="#fff"/>
+      <g id="Group_2159" data-name="Group 2159" transform="translate(-1.174 0.831)">
+        <line id="Line_24" data-name="Line 24" y2="36.338" transform="translate(35.939 28.541)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_25" data-name="Line 25" y2="36.338" transform="translate(62.449 28.541)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

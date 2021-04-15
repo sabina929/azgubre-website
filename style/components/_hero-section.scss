@@ -10,8 +10,11 @@ main{
 
     section#hero{
         width: 100%;
-        height: calc(100vh - 220px); 
+        // height: calc(100vh - 220px); 
+        // height: calc(100vh - 164px); 
+        height: calc(100vh - 200px); 
         // height: 100vh; 
+        // height: auto; 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -41,7 +44,7 @@ main{
                 left: 0%;
                 transform: translate(0%,-50%);
                 width: 76%;
-                height: 240px;
+                height: 250px;
                 border-top-right-radius: 180px;
                 border-bottom-right-radius: 180px;
                 background-color: rgba($green-color, 0.6);
@@ -49,64 +52,65 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-end;
-                padding: 48px 180px 48px 48px;
+                padding: 48px 130px 48px 48px;
                 
                div{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                width: 452px;
+                width: 500px;
                 h1.first-line{
                     position: relative;
                     font-family: $font-family-1;
-                    font-size: 32px;
+                    font-size: 30px;
                     font-weight: 300;
-                    color: rgba($white-color, 0.8);
-                    letter-spacing: 1px;
+                    color: rgba($white-color, 1);
+                    letter-spacing: 3px;
 
                     &::after{
                         content: '';
                         position: absolute;
                         bottom:21%;
-                        right: -86%;
+                        right: -90%;
                         transform: translate(-50%,-50%);
                         height: 1px;
-                        width: 140px;
-                        background-color: rgba($white-color, 0.8);
+                        width: 157px;
+                        background-color: rgba($white-color, 1);
                     }
                 }
                 h1.second-line{
                     font-family: $font-family-1;
-                    font-size: 62px;
+                    font-size: 59px;
                     font-weight: 400;
                     color: rgba($white-color, 1);
-                    letter-spacing: 1px;
+                    letter-spacing: 6px;
                     text-transform: uppercase;
                 }
                }
             }
             div.overlay-blue{
                 position: absolute;
-                bottom: 1.4%;
+                // bottom: 4%;
+                bottom: 1.6%;
                 right: -1%;
                 transform: translate(-0%,-50%);
-                width: 70%;
-                height: 80px;
+                width: 68%;
+                height: 90px;
                 border-top-left-radius: 180px;
                 border-bottom-left-radius: 180px;
-                background-color: rgba($blue-color, 0.6);
+                background-color: rgba($blue-color, 0.8);
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                padding: 24px 140px 24px 90px;
+                padding: 24px 140px 24px 62px;
                 
                 p{
                     font-family: $font-family-1;
-                    font-size: 24px;
+                    font-size: 22px;
                     font-weight: 300;
-                    color: rgba($white-color, 0.8);
+                    color: rgba($white-color, 1);
                     letter-spacing: 1px;
                     text-transform: unset;
                     width: 100%;
@@ -118,11 +122,11 @@ main{
                     justify-content: space-between;
                     align-items: center;
                     width: 60px;
-                    height: 12px;
+                    height: 13px;
 
                     span{
-                        width: 12px;
-                        height: 12px;
+                        width: 13px;
+                        height: 13px;
                         border: 1px solid rgba($white-color, 0.6);
                         border-radius: 50%;
                         cursor: pointer;

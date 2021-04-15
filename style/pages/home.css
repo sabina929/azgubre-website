@@ -501,7 +501,7 @@ main {
 
 main section#hero {
   width: 100%;
-  height: calc(100vh - 220px);
+  height: calc(100vh - 200px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,7 +543,7 @@ main section#hero article div.overlay-green {
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   width: 76%;
-  height: 240px;
+  height: 250px;
   border-top-right-radius: 180px;
   border-bottom-right-radius: 180px;
   background-color: rgba(72, 123, 47, 0.6);
@@ -560,7 +560,7 @@ main section#hero article div.overlay-green {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 48px 180px 48px 48px;
+  padding: 48px 130px 48px 48px;
 }
 
 main section#hero article div.overlay-green div {
@@ -577,50 +577,50 @@ main section#hero article div.overlay-green div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 452px;
+  width: 500px;
 }
 
 main section#hero article div.overlay-green div h1.first-line {
   position: relative;
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 1px;
+  color: white;
+  letter-spacing: 3px;
 }
 
 main section#hero article div.overlay-green div h1.first-line::after {
   content: '';
   position: absolute;
   bottom: 21%;
-  right: -86%;
+  right: -90%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 1px;
-  width: 140px;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 157px;
+  background-color: white;
 }
 
 main section#hero article div.overlay-green div h1.second-line {
   font-family: "Roboto", sans-serif;
-  font-size: 62px;
+  font-size: 59px;
   font-weight: 400;
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: 6px;
   text-transform: uppercase;
 }
 
 main section#hero article div.overlay-blue {
   position: absolute;
-  bottom: 1.4%;
+  bottom: 1.6%;
   right: -1%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  width: 70%;
-  height: 80px;
+  width: 68%;
+  height: 90px;
   border-top-left-radius: 180px;
   border-bottom-left-radius: 180px;
-  background-color: rgba(0, 44, 122, 0.6);
+  background-color: rgba(0, 44, 122, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -634,14 +634,14 @@ main section#hero article div.overlay-blue {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 24px 140px 24px 90px;
+  padding: 24px 140px 24px 62px;
 }
 
 main section#hero article div.overlay-blue p {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   letter-spacing: 1px;
   text-transform: unset;
   width: 100%;
@@ -662,12 +662,12 @@ main section#hero article div.overlay-blue div.dots {
       -ms-flex-align: center;
           align-items: center;
   width: 60px;
-  height: 12px;
+  height: 13px;
 }
 
 main section#hero article div.overlay-blue div.dots span {
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   cursor: pointer;
@@ -680,7 +680,7 @@ main section#hero article div.overlay-blue div.dots span.active {
 main section#articles {
   width: 100%;
   height: auto;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   padding: 48px;
 }
 
@@ -1275,7 +1275,7 @@ main section#last-news div.btn-container {
 main section#products {
   width: 100%;
   height: auto;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   padding: 48px;
   position: relative;
   z-index: 1;
@@ -1283,11 +1283,10 @@ main section#products {
 
 main section#products img.decoration {
   position: absolute;
-  -webkit-transform: translate(0%, -50%) rotateY(180deg);
-          transform: translate(0%, -50%) rotateY(180deg);
-  top: 220px;
-  left: -68px;
-  opacity: 0.3;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  top: 239px;
+  left: -72px;
   z-index: -1;
 }
 
@@ -1389,7 +1388,7 @@ main section#products div.products-container article a p {
 main section#trainings {
   width: 100%;
   height: auto;
-  padding: 80px 48px;
+  padding: 115px 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1403,11 +1402,12 @@ main section#trainings {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f7f9fe;
 }
 
 main section#trainings article {
-  width: 420px;
-  height: 280px;
+  width: 500px;
+  height: 326px;
   border: 1px solid #487b2f;
   position: relative;
   display: -webkit-box;
@@ -1423,7 +1423,7 @@ main section#trainings article {
 }
 
 main section#trainings article:not(:last-child) {
-  margin-right: 120px;
+  margin-right: 148px;
 }
 
 main section#trainings article div.label {
@@ -1476,14 +1476,6 @@ main section#trainings article div.img-container {
           align-items: center;
 }
 
-main section#trainings article div.img-container img.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 main section#trainings article:nth-child(1) {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -1497,8 +1489,44 @@ main section#trainings article:nth-child(1) div.label {
 }
 
 main section#trainings article:nth-child(1) div.img-container {
-  top: 56px;
-  right: -36%;
+  top: 100px;
+  right: -50%;
+}
+
+main section#trainings article:nth-child(1) div.img-container div.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(54, 54, 54, 0.44);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main section#trainings article:nth-child(1) div.img-container img.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main section#trainings article:nth-child(1) div.img-container:hover div.overlay, main section#trainings article:nth-child(1) div.img-container:focus div.overlay {
+  opacity: 1;
+}
+
+main section#trainings article:nth-child(1) div.img-container:hover img.play-button, main section#trainings article:nth-child(1) div.img-container:focus img.play-button {
+  cursor: pointer;
+  display: block;
+  opacity: 1;
 }
 
 main section#trainings article:nth-child(1) p {
@@ -1531,8 +1559,8 @@ main section#trainings article:nth-child(2) div.label {
 }
 
 main section#trainings article:nth-child(2) div.img-container {
-  top: 56px;
-  left: 24%;
+  top: 100px;
+  left: 37%;
 }
 
 main section#trainings article:nth-child(2) p {
@@ -1565,8 +1593,8 @@ main section#infos-for-farmers img.decoration {
   position: absolute;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  top: 54px;
-  right: -140px;
+  top: 154px;
+  right: -13px;
   z-index: -1;
 }
 

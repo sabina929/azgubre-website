@@ -3,17 +3,16 @@ main{
     section#products{
     width: 100%;
     height: auto; 
-    background-color: $light-color;
+    background-color: $bg-color-1;
     padding: 48px;
     position: relative;
     z-index: 1;
 
     img.decoration{
         position: absolute;
-        transform: translate(0%, -50%) rotateY(180deg);
-        top: 220px;
-        left: -68px;
-        opacity: 0.3;
+        transform: translate(0%, -50%); 
+        top: 239px;
+        left: -72px;
         z-index: -1;
     }
 
