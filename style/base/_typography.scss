@@ -15,6 +15,17 @@ body{
     text-transform: uppercase;
     // width: 300px;
 
+    @media only screen and (max-width: 660px) {
+        font-size:18px;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+    @media only screen and (max-width: 340px) {
+        font-size:16px;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+    }
+
     &::before{
         content: '';
         position: absolute;
@@ -23,6 +34,15 @@ body{
         transform: translate(-50%,-50%);
         height: 1px;
         width: 72px;
+
+        @media only screen and (max-width: 660px) {
+            left: -50px;
+            width: 60px;
+        }
+        @media only screen and (max-width: 420px) {
+            left: -40px;
+            width: 40px;
+        }
     }
     &::after{
         content: '';
@@ -32,6 +52,15 @@ body{
         transform: translate(-50%,-50%);
         height: 1px;
         width: 72px;
+
+        @media only screen and (max-width: 660px) {
+            right: -110px;
+            width: 60px;
+        }
+        @media only screen and (max-width: 420px) {
+            right: -80px;
+            width: 40px;
+        }
     }
 
     &.green{
@@ -57,7 +86,17 @@ body{
     &.white{
         color: $white-color;
         width: 210px;
-        line-height: 30px;
+        
+        @media only screen and (max-width: 660px) {
+            width: 170px;
+        }
+        @media only screen and (max-width: 420px) {
+            width: 170px;
+        }
+        
+        @media only screen and (max-width: 340px) {
+            width: 150px;
+        }
         
         &::before{
             top:25%;

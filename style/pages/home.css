@@ -31,6 +31,22 @@ body {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 660px) {
+  .heading-primary {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .heading-primary {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+  }
+}
+
 .heading-primary::before {
   content: '';
   position: absolute;
@@ -42,6 +58,20 @@ body {
   width: 72px;
 }
 
+@media only screen and (max-width: 660px) {
+  .heading-primary::before {
+    left: -50px;
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .heading-primary::before {
+    left: -40px;
+    width: 40px;
+  }
+}
+
 .heading-primary::after {
   content: '';
   position: absolute;
@@ -51,6 +81,20 @@ body {
           transform: translate(-50%, -50%);
   height: 1px;
   width: 72px;
+}
+
+@media only screen and (max-width: 660px) {
+  .heading-primary::after {
+    right: -110px;
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .heading-primary::after {
+    right: -80px;
+    width: 40px;
+  }
 }
 
 .heading-primary.green {
@@ -80,7 +124,24 @@ body {
 .heading-primary.white {
   color: #ffffff;
   width: 210px;
-  line-height: 30px;
+}
+
+@media only screen and (max-width: 660px) {
+  .heading-primary.white {
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .heading-primary.white {
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .heading-primary.white {
+    width: 150px;
+  }
 }
 
 .heading-primary.white::before {
@@ -2914,6 +2975,25 @@ main section#our-sales-points {
           align-items: center;
 }
 
+@media only screen and (max-width: 1300px) {
+  main section#our-sales-points {
+    padding: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 main section#our-sales-points article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2931,12 +3011,52 @@ main section#our-sales-points article {
   width: 50%;
 }
 
+@media only screen and (max-width: 1300px) {
+  main section#our-sales-points article {
+    width: 100%;
+  }
+}
+
 main section#our-sales-points article:not(:last-child) {
   margin-right: 48px;
 }
 
+@media only screen and (max-width: 1300px) {
+  main section#our-sales-points article:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
 main section#our-sales-points article:nth-child(1) {
   position: relative;
+}
+
+@media only screen and (max-width: 700px) {
+  main section#our-sales-points article:nth-child(1) svg {
+    width: 460px;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  main section#our-sales-points article:nth-child(1) svg {
+    width: 400px;
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section#our-sales-points article:nth-child(1) svg {
+    width: 340px;
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main section#our-sales-points article:nth-child(1) svg {
+    width: 290px;
+    height: 230px;
+  }
 }
 
 main section#our-sales-points article:nth-child(1) svg path {
@@ -2961,6 +3081,34 @@ main section#our-sales-points article:nth-child(1) div.location-contaioner {
   position: absolute;
   -webkit-transform: translate(736%, -182%);
           transform: translate(736%, -182%);
+}
+
+@media only screen and (max-width: 700px) {
+  main section#our-sales-points article:nth-child(1) div.location-contaioner {
+    -webkit-transform: translate(562%, -130%);
+            transform: translate(562%, -130%);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  main section#our-sales-points article:nth-child(1) div.location-contaioner {
+    -webkit-transform: translate(494%, -106%);
+            transform: translate(494%, -106%);
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section#our-sales-points article:nth-child(1) div.location-contaioner {
+    -webkit-transform: translate(588%, -106%);
+            transform: translate(588%, -106%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main section#our-sales-points article:nth-child(1) div.location-contaioner {
+    -webkit-transform: translate(504%, -92%);
+            transform: translate(504%, -92%);
+  }
 }
 
 main section#our-sales-points article:nth-child(1) div.location-contaioner div.location-info {
@@ -2988,6 +3136,18 @@ main section#our-sales-points article:nth-child(1) div.location-contaioner div.l
       -ms-flex-align: center;
           align-items: center;
   width: 158px;
+}
+
+@media only screen and (max-width: 460px) {
+  main section#our-sales-points article:nth-child(1) div.location-contaioner div.location-info {
+    top: -45px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main section#our-sales-points article:nth-child(1) div.location-contaioner div.location-info {
+    top: -40px;
+  }
 }
 
 main section#our-sales-points article:nth-child(1) div.location-contaioner div.location-info h4 {
@@ -3033,8 +3193,27 @@ main section#our-sales-points article:nth-child(1) div.location-contaioner div.l
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 460px) {
+  main section#our-sales-points article:nth-child(1) div.location-contaioner img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 main section#our-sales-points article:nth-child(2) {
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1300px) {
+  main section#our-sales-points article:nth-child(2) {
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  main section#our-sales-points article:nth-child(2) {
+    margin-bottom: 48px;
+  }
 }
 
 main section#our-sales-points article:nth-child(2) h2.heading-primary.white.one-line {
@@ -3049,6 +3228,14 @@ main section#our-sales-points article:nth-child(2) h3 {
   font-weight: 700;
   letter-spacing: 1px;
   color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+  main section#our-sales-points article:nth-child(2) h3 {
+    font-size: 26px;
+    letter-spacing: .8px;
+  }
 }
 
 main section#our-sales-points article:nth-child(2) p {
@@ -3058,6 +3245,20 @@ main section#our-sales-points article:nth-child(2) p {
   font-weight: 300;
   letter-spacing: 1px;
   color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+  main section#our-sales-points article:nth-child(2) p {
+    font-size: 23px;
+    letter-spacing: .8px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section#our-sales-points article:nth-child(2) p {
+    margin-bottom: 56px;
+  }
 }
 
 main section#our-sales-points article:nth-child(2) div.dropdown-container {
@@ -3083,6 +3284,20 @@ main section#our-sales-points article:nth-child(2) div.dropdown-container p {
   font-weight: 500;
   letter-spacing: 1px;
   color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+  main section#our-sales-points article:nth-child(2) div.dropdown-container p {
+    font-size: 18px;
+    letter-spacing: .8px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section#our-sales-points article:nth-child(2) div.dropdown-container p {
+    margin-bottom: 20px;
+  }
 }
 
 main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown {
@@ -3108,6 +3323,12 @@ main section#our-sales-points article:nth-child(2) div.dropdown-container div.dr
   cursor: pointer;
 }
 
+@media only screen and (max-width: 460px) {
+  main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown {
+    width: 270px;
+  }
+}
+
 main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown p {
   color: #002c7a;
   font-family: "Roboto", sans-serif;
@@ -3115,5 +3336,6 @@ main section#our-sales-points article:nth-child(2) div.dropdown-container div.dr
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 0px;
+  text-align: left;
 }
 /*# sourceMappingURL=home.css.map */
