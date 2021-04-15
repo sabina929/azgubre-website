@@ -4,7 +4,11 @@ main{
     width: 100%;
     height: auto; 
     padding: 64px;
-
+    position: relative;
+    
+    @media only screen and (max-width: 960px) {
+        padding: 64px 48px 48px 48px;
+    }
 
     div.heading{
         display: flex;
@@ -12,16 +16,15 @@ main{
         justify-content: center;
         align-items: center;
     }
-  
-
-    div.partners-container{
+    div.indicators-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 48px;
+        margin-top: 36px;
+       
 
-        div.left-arrow{
+        div.partners-left-arrow{
             cursor: pointer;
             display: flex;
             flex-direction: column;
@@ -29,20 +32,8 @@ main{
             align-items: center;
             margin-right: 52px;
         }
-        div.partners{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            
-            article{
-                cursor: pointer;
-                &:not(:last-child){
-                    margin-right: 52px;
-                }
-            }
-        }
-        div.right-arrow{
+
+        div.partners-right-arrow{
             cursor: pointer;
             display: flex;
             flex-direction: column;
@@ -50,11 +41,192 @@ main{
             align-items: center;
             margin-left: 52px;
         }
+    
+       
     }
 
+    div.partners-container.owl-carousel.owl-theme{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 48px 200px;
 
+        @media only screen and (max-width: 1500px) {
+            padding: 48px 180px;
+        }
+        @media only screen and (max-width: 1480px) {
+            padding: 48px 140px;
+        }
+        @media only screen and (max-width: 1460px) {
+            padding: 48px 100px;
+        }
+        @media only screen and (max-width: 1380px) {
+            padding: 48px 60px;
+        }
+        @media only screen and (max-width: 1280px) {
+            padding: 48px 40px;
+        }
+        @media only screen and (max-width: 1160px) {
+            padding: 24px 24px;
+        }
+        @media only screen and (max-width: 960px) {
+            padding: 24px 48px;
+        }
+        @media only screen and (max-width: 820px) {
+            padding: 24px 24px;
+        }
+        @media only screen and (max-width: 559px) {
+            padding: 24px 24px;
+        }
+        @media only screen and (max-width: 419px) {
+            padding: 24px 48px;
+        }
+        @media only screen and (max-width: 380px) {
+            padding: 24px 24px;
+        }
+        &.owl-carousel.owl-drag {
+            .owl-stage{
+                height: 78px;
+                @media only screen and (max-width: 960px) {
+                    height: 60px;
+                }
+                .owl-item {
+                    height: 78px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    @media only screen and (max-width: 960px) {
+                        height: 60px;
+                    }
+                    
+                    article{
+                        height: 78px;
+                        width: 320px;
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        &:not(:last-child){
+                            margin-right: 0px;
+                        }
+                        a{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center; 
+                            text-decoration: none;
+                            width: 60%;
+                            height: 100%;
+                            
+                            @media only screen and (max-width: 1280px) {
+                                width: 50%;
+                            }
+                            @media only screen and (max-width: 1060px) {
+                                width: 45%;
+                            }
+                            @media only screen and (max-width: 960px) {
+                                width: 40%;
+                            }
+                            @media only screen and (max-width: 860px) {
+                                width: 35%;
+                            }
+                            @media only screen and (max-width: 559px) {
+                                width: 50%;
+                            }
+                            @media only screen and (max-width: 500px) {
+                                width: 45%;
+                            }
+                            @media only screen and (max-width: 470px) {
+                                width: 40%;
+                            }
+                            @media only screen and (max-width: 419px) {
+                                width: 50%;
+                            }
+                            // @media only screen and (max-width: 339px) {
+                            //     width: 50%;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+        div.owl-nav{
+            z-index: -1;
+            margin-top: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 82%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            @media only screen and (max-width: 1500px) {
+                width: 86%;
+            }
+            @media only screen and (max-width: 1480px) {
+                width: 90%;
+            }
+            @media only screen and (max-width: 1460px) {
+                width: 94%;
+            }
+            @media only screen and (max-width: 1380px) {
+                width: 98%;
+            }
+
+            @media only screen and (max-width: 1280px) {
+                width: 102%;
+            }
+            @media only screen and (max-width: 1060px) {
+                width: 102%;
+            }
+            @media only screen and (max-width: 960px) {
+                width: 102%;
+            }
+            @media only screen and (max-width: 860px) {
+                width: 102%;
+            }
+            @media only screen and (max-width: 559px) {
+                width: 106%;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 106%;
+            }
+            @media only screen and (max-width: 460px) {
+                width: 114%;
+            }
+            @media only screen and (max-width: 419px) {
+                width: 96%;
+            }
+            @media only screen and (max-width: 380px) {
+                width: 112%;
+            }
+
+            &[class*=owl-]:hover {
+                background: transparent;
+                color: #b1b1b1;
+            }
+
+            button{
+                border: none;
+                background-color: transparent;
+                outline: none;
+            }
+
+        }
+      
+    }
+    
+
+    
     // border: $border-check-2;
-
+    
     // @media only screen and (max-width: 760px) {
     //     margin: 0px 0px 190px 0px;
     // }

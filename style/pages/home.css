@@ -1375,15 +1375,15 @@ main section#last-news div.indicators-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 48px;
+  margin-top: 36px;
 }
 
-main section#last-news div.indicators-container svg#left-arrow {
+main section#last-news div.indicators-container div#left-arrow {
   margin-right: 24px;
   cursor: pointer;
 }
 
-main section#last-news div.indicators-container svg#right-arrow {
+main section#last-news div.indicators-container div#right-arrow {
   margin-left: 24px;
   cursor: pointer;
 }
@@ -1420,7 +1420,7 @@ main section#last-news div.indicators-container div.indicators span:not(:last-ch
   margin-right: 18px;
 }
 
-main section#last-news div.news-container {
+main section#last-news div.news-container.owl-carousel.owl-theme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1434,39 +1434,61 @@ main section#last-news div.news-container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 24px 48px 48px 80px;
+  padding: 0px 48px 0px 48px;
 }
 
-main section#last-news div.news-container article {
+@media only screen and (max-width: 600px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme .owl-stage {
+  margin: 48px 0;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme article {
   background-color: transparent;
   padding: 10px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-main section#last-news div.news-container article:hover, main section#last-news div.news-container article:focus {
+main section#last-news div.news-container.owl-carousel.owl-theme article:hover, main section#last-news div.news-container.owl-carousel.owl-theme article:focus {
   background-color: #ffffff;
   padding: 10px;
   -webkit-box-shadow: 0 4px 42px 2px rgba(54, 52, 53, 0.15);
           box-shadow: 0 4px 42px 2px rgba(54, 52, 53, 0.15);
 }
 
-main section#last-news div.news-container article:not(:last-child) {
+main section#last-news div.news-container.owl-carousel.owl-theme article:not(:last-child) {
   margin-right: 48px;
 }
 
-main section#last-news div.news-container article div.img-container {
+@media only screen and (max-width: 1300px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme article:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme article:not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme article div.img-container {
   width: 100%;
   margin-bottom: 24px;
   position: relative;
 }
 
-main section#last-news div.news-container article div.img-container img {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.img-container img {
   width: 100%;
   height: auto;
 }
 
-main section#last-news div.news-container article div.img-container div.overlay {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.img-container div.overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1482,7 +1504,7 @@ main section#last-news div.news-container article div.img-container div.overlay 
   transition: all .3s ease;
 }
 
-main section#last-news div.news-container article div.img-container img.zoom-in-icon {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.img-container img.zoom-in-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1496,21 +1518,21 @@ main section#last-news div.news-container article div.img-container img.zoom-in-
   transition: all .3s ease;
 }
 
-main section#last-news div.news-container article div.img-container:hover div.overlay, main section#last-news div.news-container article div.img-container:focus div.overlay {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.img-container:hover div.overlay, main section#last-news div.news-container.owl-carousel.owl-theme article div.img-container:focus div.overlay {
   opacity: 1;
 }
 
-main section#last-news div.news-container article div.img-container:hover img.zoom-in-icon, main section#last-news div.news-container article div.img-container:focus img.zoom-in-icon {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.img-container:hover img.zoom-in-icon, main section#last-news div.news-container.owl-carousel.owl-theme article div.img-container:focus img.zoom-in-icon {
   display: block;
   opacity: 1;
   cursor: pointer;
 }
 
-main section#last-news div.news-container article div.content-container {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.content-container {
   margin-bottom: 8px;
 }
 
-main section#last-news div.news-container article div.content-container a {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.content-container a {
   text-decoration: none;
   color: #002c7a;
   font-size: 18px;
@@ -1518,18 +1540,18 @@ main section#last-news div.news-container article div.content-container a {
   font-weight: 400;
 }
 
-main section#last-news div.news-container article div.content-container a:hover, main section#last-news div.news-container article div.content-container a:focus {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.content-container a:hover, main section#last-news div.news-container.owl-carousel.owl-theme article div.content-container a:focus {
   text-decoration: underline;
 }
 
-main section#last-news div.news-container article div.content-container a p {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.content-container a p {
   color: #002c7a;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
 }
 
-main section#last-news div.news-container article div.content-container p.date {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.content-container p.date {
   color: #7b7b7b;
   font-size: 12px;
   line-height: 18px;
@@ -1538,11 +1560,183 @@ main section#last-news div.news-container article div.content-container p.date {
   margin-bottom: 10px;
 }
 
-main section#last-news div.news-container article div.content-container p {
+main section#last-news div.news-container.owl-carousel.owl-theme article div.content-container p {
   color: #363435;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav {
+  margin-top: 0;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1219px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav {
+    top: 15px;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav {
+    width: 396px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav {
+    width: 300px;
+  }
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav[class*=owl-]:hover {
+  background: transparent;
+  color: #b1b1b1;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  opacity: 1;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav button path {
+  fill: #002c7a;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav button.disabled {
+  background-color: transparent;
+  opacity: 1;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-nav button.disabled path {
+  fill: #b1b1b1;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots {
+  position: absolute;
+  top: 17px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 104px;
+  height: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1219px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots {
+    top: 16px;
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots {
+    top: 16px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots {
+    top: 16px;
+    width: 210px;
+  }
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots button.owl-dot {
+  width: 24px;
+  height: 3px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #0c3f97;
+  border: none;
+  outline: none;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots button.owl-dot span {
+  width: 100%;
+  height: 100%;
+  background-color: #0c3f97;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots button.owl-dot.active {
+  background-color: #b1b1b1;
+}
+
+main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots button.owl-dot.active span {
+  background-color: #b1b1b1;
+}
+
+@media only screen and (max-width: 719px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots button.owl-dot {
+    width: 12px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  main section#last-news div.news-container.owl-carousel.owl-theme div.owl-dots button.owl-dot {
+    width: 8px;
+  }
 }
 
 main section#last-news div.btn-container {
@@ -2025,6 +2219,13 @@ main section#our-partners {
   width: 100%;
   height: auto;
   padding: 64px;
+  position: relative;
+}
+
+@media only screen and (max-width: 960px) {
+  main section#our-partners {
+    padding: 64px 48px 48px 48px;
+  }
 }
 
 main section#our-partners div.heading {
@@ -2043,7 +2244,7 @@ main section#our-partners div.heading {
           align-items: center;
 }
 
-main section#our-partners div.partners-container {
+main section#our-partners div.indicators-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2057,10 +2258,10 @@ main section#our-partners div.partners-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 48px;
+  margin-top: 36px;
 }
 
-main section#our-partners div.partners-container div.left-arrow {
+main section#our-partners div.indicators-container div.partners-left-arrow {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2078,31 +2279,7 @@ main section#our-partners div.partners-container div.left-arrow {
   margin-right: 52px;
 }
 
-main section#our-partners div.partners-container div.partners {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main section#our-partners div.partners-container div.partners article {
-  cursor: pointer;
-}
-
-main section#our-partners div.partners-container div.partners article:not(:last-child) {
-  margin-right: 52px;
-}
-
-main section#our-partners div.partners-container div.right-arrow {
+main section#our-partners div.indicators-container div.partners-right-arrow {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2118,6 +2295,325 @@ main section#our-partners div.partners-container div.right-arrow {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 52px;
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 48px 200px;
+}
+
+@media only screen and (max-width: 1500px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 48px 180px;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 48px 140px;
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 48px 100px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 48px 60px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 48px 40px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 24px 24px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 24px 48px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 24px 24px;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 24px 24px;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 24px 48px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme {
+    padding: 24px 24px;
+  }
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage {
+  height: 78px;
+}
+
+@media only screen and (max-width: 960px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage {
+    height: 60px;
+  }
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item {
+  height: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 960px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item {
+    height: 60px;
+  }
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article {
+  height: 78px;
+  width: 320px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article:not(:last-child) {
+  margin-right: 0px;
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 60%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme.owl-carousel.owl-drag .owl-stage .owl-item article a {
+    width: 50%;
+  }
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+  z-index: -1;
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1500px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 94%;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 102%;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 102%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 102%;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 102%;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 106%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 106%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 114%;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav {
+    width: 112%;
+  }
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav[class*=owl-]:hover {
+  background: transparent;
+  color: #b1b1b1;
+}
+
+main section#our-partners div.partners-container.owl-carousel.owl-theme div.owl-nav button {
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 
 main section#our-sales-points {

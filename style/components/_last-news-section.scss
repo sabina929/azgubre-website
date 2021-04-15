@@ -28,12 +28,20 @@ main{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: 48px;
-        svg#left-arrow{
+        margin-top: 36px;
+        // svg#left-arrow{
+        //     margin-right: 24px;
+        //     cursor: pointer;
+        // }
+        // svg#right-arrow{
+        //     margin-left: 24px;
+        //     cursor: pointer;
+        // }
+        div#left-arrow{
             margin-right: 24px;
             cursor: pointer;
         }
-        svg#right-arrow{
+        div#right-arrow{
             margin-left: 24px;
             cursor: pointer;
         }
@@ -62,16 +70,29 @@ main{
         }
     }
 
-    div.news-container{
+    div.news-container.owl-carousel.owl-theme {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        padding: 24px 48px 48px 80px;
+        padding: 0px 48px 0px 48px;
+        
+        @media only screen and (max-width: 600px) {
+            padding: 0px 0px 0px 0px;
+        }
+
+        .owl-stage{
+            margin: 48px 0;
+        }
+
         article{
             background-color: transparent;
             padding: 10px;
             transition: all .3s ease;
+
+            // @media only screen and (max-width: 1260px) {
+            //     width: 50%;
+            // }
             
             &:hover,&:focus{
                 background-color: $white-color;
@@ -81,6 +102,13 @@ main{
 
             &:not(:last-child){
                 margin-right: 48px;
+                
+                @media only screen and (max-width: 1300px) {
+                    margin-right: 36px;
+                }
+                @media only screen and (max-width: 1260px) {
+                    margin-right: 48px;
+                }
             }
 
             div.img-container{
@@ -174,6 +202,129 @@ main{
                 }
                 
             }
+            
+        }
+
+        div.owl-nav{
+            margin-top: 0;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 210px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            @media only screen and (max-width: 1219px) {
+                width: 260px;
+            }
+            @media only screen and (max-width: 979px) {
+                top: 15px;
+                width: 350px;
+            }
+            @media only screen and (max-width: 719px) {
+                // top: 15px;
+                width: 396px;
+            }
+            @media only screen and (max-width: 479px) {
+                // top: 15px;
+                width: 300px;
+            }
+
+            &[class*=owl-]:hover {
+                background: transparent;
+                color: #b1b1b1;
+            }
+
+            button{
+                border: none;
+                background-color: transparent;
+                outline: none;
+                opacity: 1;
+
+                path{
+                    fill: $blue-color;
+                    
+                }
+                &.disabled{
+                    background-color: transparent;
+                    opacity: 1;
+                    path{
+                        fill: #b1b1b1;
+
+                    }
+                }
+            }
+        }
+
+      
+        div.owl-dots{
+            position: absolute;
+            top: 17px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 104px;
+            height: 2px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            @media only screen and (max-width: 1219px) {
+                width: 150px;
+            }
+            
+            @media only screen and (max-width: 979px) {
+                top: 16px;
+                width: 240px;
+            }
+            @media only screen and (max-width: 719px) {
+                top: 16px;
+                width: 300px;
+            }
+            @media only screen and (max-width: 479px) {
+                top: 16px;
+                width: 210px;
+            }
+
+            button.owl-dot{
+                    width: 24px;
+                    height: 3px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    background-color: #0c3f97;
+                    border: none;
+                    outline: none;
+
+                    span{
+                        width: 100%;
+                        height: 100%;
+                        background-color: #0c3f97;
+                    }
+                    &.active{
+                        background-color: #b1b1b1;
+                        span{
+                            background-color: #b1b1b1;
+
+                        }
+                    }
+                    @media only screen and (max-width: 719px) {
+                        width: 12px;
+                    }       
+                    @media only screen and (max-width: 479px) {
+                        width: 8px;
+                    }       
+                                
+            }
+            
+
+           
         }
     }
     div.btn-container{
@@ -193,3 +344,4 @@ main{
    
     }
 }
+

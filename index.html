@@ -11,11 +11,11 @@
 
 
     <!-- OWL CAROUSEL -->
-    <!-- <link rel="stylesheet" href="./js/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./js/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./js/owl-carousel/owl.theme.default.min.css">
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="./js/owl-carousel/owl.carousel.min.js"></script> -->
+    <script src="./js/owl-carousel/owl.carousel.min.js"></script>
 
 
     <!-- STYLE -->
@@ -139,23 +139,124 @@
                 <h2 class="heading-primary blue">Son xəbərlər</h2>
             </div>
             <div class="indicators-container">
-                <svg id="left-arrow" xmlns="http://www.w3.org/2000/svg" width="29.39" height="14.236" viewBox="0 0 29.39 14.236">
-                    <g id="Group_934" data-name="Group 934">
-                      <path id="Path_11663" data-name="Path 11663" d="M.337,138.305h0l6-5.97a1.148,1.148,0,0,1,1.62,1.627L3.929,137.97H28.241a1.148,1.148,0,1,1,0,2.3H3.929l4.027,4.008a1.148,1.148,0,0,1-1.62,1.627l-6-5.97h0A1.149,1.149,0,0,1,.337,138.305Z" transform="translate(0 -132)" fill="#b1b1b1"/>
-                    </g>
-                </svg>
-                <div class="indicators">
+                <div id="left-arrow">
+                    <svg id="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" width="29.39" height="14.236" viewBox="0 0 29.39 14.236">
+                        <g id="Group_934" data-name="Group 934">
+                          <path id="Path_11663" data-name="Path 11663" d="M.337,138.305h0l6-5.97a1.148,1.148,0,0,1,1.62,1.627L3.929,137.97H28.241a1.148,1.148,0,1,1,0,2.3H3.929l4.027,4.008a1.148,1.148,0,0,1-1.62,1.627l-6-5.97h0A1.149,1.149,0,0,1,.337,138.305Z" transform="translate(0 -132)" fill="#b1b1b1"/>
+                        </g>
+                      </svg>                      
+                </div>
+                <!-- <div class="indicators">
                     <span class="active"></span>
                     <span></span>
                     <span></span>
+                </div> -->
+                <div id="right-arrow">
+                    <svg id="svg-right-arrow" xmlns="http://www.w3.org/2000/svg" width="29.39" height="14.236" viewBox="0 0 29.39 14.236">
+                        <g id="Group_934" data-name="Group 934" transform="translate(0 0)">
+                          <path id="Path_11663" data-name="Path 11663" d="M29.053,138.305h0l-6-5.97a1.148,1.148,0,0,0-1.62,1.627l4.028,4.008H1.148a1.148,1.148,0,1,0,0,2.3H25.461l-4.027,4.008a1.148,1.148,0,0,0,1.62,1.627l6-5.97h0A1.149,1.149,0,0,0,29.053,138.305Z" transform="translate(0 -132)" fill="#002c7a"/>
+                        </g>
+                      </svg>
+                      
                 </div>
-                <svg id="right-arrow" xmlns="http://www.w3.org/2000/svg" width="29.39" height="14.236" viewBox="0 0 29.39 14.236">
-                    <g id="Group_934" data-name="Group 934" transform="translate(0 0)">
-                      <path id="Path_11663" data-name="Path 11663" d="M29.053,138.305h0l-6-5.97a1.148,1.148,0,0,0-1.62,1.627l4.028,4.008H1.148a1.148,1.148,0,1,0,0,2.3H25.461l-4.027,4.008a1.148,1.148,0,0,0,1.62,1.627l6-5.97h0A1.149,1.149,0,0,0,29.053,138.305Z" transform="translate(0 -132)" fill="#002c7a"/>
-                    </g>
-                </svg>
             </div>
-            <div class="news-container">
+            <div class="news-container owl-carousel owl-theme" id="news-carousel">
+                <article>
+                    <div class="img-container">
+                        <img src="./assets/images/son-xeberler-section/agricultural-tractor-fertilizing-wheat-crop-field-Q397ZXG-min.png" alt="agricultural tractor fertilizing wheat crop field">
+                        <div class="overlay"></div>
+                        <img src="./assets/images/son-xeberler-section/zoom-in-icon.svg" alt="zoom in icon" class="zoom-in-icon">
+                    </div>
+                    <div class="content-container">
+                        <a href="#"><p>A Lorem ipsum dolor sit qua eius, max nulla officia amet cupiditate iures saepe officia amet.</p></a>
+                        <p class="date">21.05.2020</p>
+                        <p>Lorem ipsum dolor sit amet, aperiam est temporibus incidunt.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-container">
+                        <img src="./assets/images/son-xeberler-section/a-farmer-outdoors-in-orchard-at-sunset-using-pesti-DSV785D-min.png" alt="a farmer outdoors in orchard at sunset using pesticide">
+                        <div class="overlay"></div>
+                        <img src="./assets/images/son-xeberler-section/zoom-in-icon.svg" alt="zoom in icon" class="zoom-in-icon">
+                    </div>
+                    <div class="content-container">
+                        <a href="#"><p>A Lorem ipsum dolor sit qua eius, max nulla officia amet cupiditate iures saepe officia amet.</p></a>
+                        <p class="date">21.05.2020</p>
+                        <p>Lorem ipsum dolor sit amet, aperiam est temporibus incidunt.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-container">
+                        <img src="./assets/images/son-xeberler-section/gardener-applying-fertiliser-MKYBL7G-min.png" alt="gardener applying fertiliser">
+                        <div class="overlay"></div>
+                        <img src="./assets/images/son-xeberler-section/zoom-in-icon.svg" alt="zoom in icon" class="zoom-in-icon">
+                    </div>
+                    <div class="content-container">
+                        <a href="#"><p>A Lorem ipsum dolor sit qua eius, max nulla officia amet cupiditate iures saepe officia amet.</p></a>
+                        <p class="date">21.05.2020</p>
+                        <p>Lorem ipsum dolor sit amet, aperiam est temporibus incidunt.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-container">
+                        <img src="./assets/images/son-xeberler-section/gardening-girl-UHHH572-min.png" alt="gardening girl">
+                        <div class="overlay"></div>
+                        <img src="./assets/images/son-xeberler-section/zoom-in-icon.svg" alt="zoom in icon" class="zoom-in-icon">
+                    </div>
+                    <div class="content-container">
+                        <a href="#"><p>A Lorem ipsum dolor sit qua eius, max nulla officia amet cupiditate iures saepe officia amet.</p></a>
+                        <p class="date">21.05.2020</p>
+                        <p>Lorem ipsum dolor sit amet, aperiam est temporibus incidunt.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-container">
+                        <img src="./assets/images/son-xeberler-section/agricultural-tractor-fertilizing-wheat-crop-field-Q397ZXG-min.png" alt="agricultural tractor fertilizing wheat crop field">
+                        <div class="overlay"></div>
+                        <img src="./assets/images/son-xeberler-section/zoom-in-icon.svg" alt="zoom in icon" class="zoom-in-icon">
+                    </div>
+                    <div class="content-container">
+                        <a href="#"><p>A Lorem ipsum dolor sit qua eius, max nulla officia amet cupiditate iures saepe officia amet.</p></a>
+                        <p class="date">21.05.2020</p>
+                        <p>Lorem ipsum dolor sit amet, aperiam est temporibus incidunt.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-container">
+                        <img src="./assets/images/son-xeberler-section/a-farmer-outdoors-in-orchard-at-sunset-using-pesti-DSV785D-min.png" alt="a farmer outdoors in orchard at sunset using pesticide">
+                        <div class="overlay"></div>
+                        <img src="./assets/images/son-xeberler-section/zoom-in-icon.svg" alt="zoom in icon" class="zoom-in-icon">
+                    </div>
+                    <div class="content-container">
+                        <a href="#"><p>A Lorem ipsum dolor sit qua eius, max nulla officia amet cupiditate iures saepe officia amet.</p></a>
+                        <p class="date">21.05.2020</p>
+                        <p>Lorem ipsum dolor sit amet, aperiam est temporibus incidunt.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-container">
+                        <img src="./assets/images/son-xeberler-section/gardener-applying-fertiliser-MKYBL7G-min.png" alt="gardener applying fertiliser">
+                        <div class="overlay"></div>
+                        <img src="./assets/images/son-xeberler-section/zoom-in-icon.svg" alt="zoom in icon" class="zoom-in-icon">
+                    </div>
+                    <div class="content-container">
+                        <a href="#"><p>A Lorem ipsum dolor sit qua eius, max nulla officia amet cupiditate iures saepe officia amet.</p></a>
+                        <p class="date">21.05.2020</p>
+                        <p>Lorem ipsum dolor sit amet, aperiam est temporibus incidunt.</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-container">
+                        <img src="./assets/images/son-xeberler-section/gardening-girl-UHHH572-min.png" alt="gardening girl">
+                        <div class="overlay"></div>
+                        <img src="./assets/images/son-xeberler-section/zoom-in-icon.svg" alt="zoom in icon" class="zoom-in-icon">
+                    </div>
+                    <div class="content-container">
+                        <a href="#"><p>A Lorem ipsum dolor sit qua eius, max nulla officia amet cupiditate iures saepe officia amet.</p></a>
+                        <p class="date">21.05.2020</p>
+                        <p>Lorem ipsum dolor sit amet, aperiam est temporibus incidunt.</p>
+                    </div>
+                </article>
                 <article>
                     <div class="img-container">
                         <img src="./assets/images/son-xeberler-section/agricultural-tractor-fertilizing-wheat-crop-field-Q397ZXG-min.png" alt="agricultural tractor fertilizing wheat crop field">
@@ -205,6 +306,13 @@
                     </div>
                 </article>
             </div>
+            <div class="owl-nav">
+                <button type="button" role="presentation" class="owl-prev">
+                </button>
+                <button type="button" role="presentation" class="owl-next">
+                </button>
+            </div>
+            
             <div class="btn-container">
                 <button type="button" class="btn blue">Bütün Məqalələr</button>
             </div>
@@ -285,36 +393,68 @@
             <div class="heading">
                 <h2 class="heading-primary blue">PARTNYORLARIMIZ</h2>
             </div>
-            <div class="partners-container">
-                <div class="left-arrow">
+            <div class="indicators-container">
+                <div id="partners-left-arrow">
                     <img src="./assets/images/our-partners-section/left-arrow-icon.svg" alt="left arrow icon">
                 </div>
-               <div class="partners">
-                    <article>
-                        <div class="img-container">
-                        <img src="./assets/images/our-partners-section/agro-dairy.png" alt="Agro Dairy logo">
-                        </div>
-                    </article>
-                    <article>
-                        <div class="img-container">
-                            <img src="./assets/images/our-partners-section/eurochem.png" alt="Eurochem logo">
-                        </div>
-                    </article>
-                    <article>
-                        <div class="img-container">
-                            <img src="./assets/images/our-partners-section/socar.png" alt="Socar logo">
-                        </div>
-                    </article>
-                    <article>
-                        <div class="img-container">
-                            <img src="./assets/images/our-partners-section/rustavi-azot.png" alt="Rustavi Azot logo">
-                        </div>
-                    </article>
-               </div>
-                <div class="right-arrow">
+                <div id="partners-right-arrow">
                     <img src="./assets/images/our-partners-section/right-arrow-icon.svg" alt="right arrow icon">
                 </div>
             </div>
+         
+            <div class="partners-container owl-carousel owl-theme" id="partners-carousel">
+                    <article>
+                        <a href="#" class="img-container">
+                            <img src="./assets/images/our-partners-section/agro-dairy.png" alt="Agro Dairy logo">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="img-container">
+                            <img src="./assets/images/our-partners-section/eurochem.png" alt="Eurochem logo">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="img-container">
+                            <img src="./assets/images/our-partners-section/socar.png" alt="Socar logo">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="img-container">
+                            <img src="./assets/images/our-partners-section/rustavi-azot.png" alt="Rustavi Azot logo">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="img-container">
+                            <img src="./assets/images/our-partners-section/agro-dairy.png" alt="Agro Dairy logo">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="img-container">
+                            <img src="./assets/images/our-partners-section/eurochem.png" alt="Eurochem logo">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="img-container">
+                            <img src="./assets/images/our-partners-section/socar.png" alt="Socar logo">
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="img-container">
+                            <img src="./assets/images/our-partners-section/rustavi-azot.png" alt="Rustavi Azot logo">
+                        </a>
+                    </article>
+
+                    
+                </div>
+                
+                <div class="owl-nav">
+                    <button type="button" role="presentation" class="owl-prev">
+                    </button>
+                    <button type="button" role="presentation" class="owl-next">
+                    </button>
+                </div>
+            
+           
         </section>
         <section id="our-sales-points">
             <article>
@@ -483,5 +623,101 @@
             <p>Sayt DREAMART CREATIVE AGENCY tərəfindən hazırlanmışdır.</p>
         </div>
     </footer>
+
+
+     <!-- OWL CAROUSEL -->
+     <script>
+        let owlNews = $("#news-carousel")
+            
+        owlNews.owlCarousel({
+                margin: 48,
+                drag: true,
+                responsiveClass: true,
+                autoHeight: false,
+                smartSpeed: 1000,
+                // lazyLoad:true,
+                nav: true,
+                navText: [$('div#left-arrow'),$('div#right-arrow')],
+                navSpeed:300,
+                rewind:false,
+                slideBy:4,
+                dots: true,
+                dotsSpeed:300,
+                responsive: {
+                    0: {
+                        margin: 36,
+                        items: 1
+                    },
+                    600: {
+                        margin: 48,
+                        items: 1
+                    },
+                    720: {
+                        margin: 18,
+                        items: 2
+                    },
+                    900: {
+                        margin: 36,
+                        items: 2
+                    },
+                    980: {
+                        margin: 18,
+                        items: 3
+                    },
+                    1120: {
+                        margin: 24,
+                        items: 3
+                    },
+                    1220: {
+                        margin: 36,
+                        items: 4
+                    },
+                    1360: {
+                        margin: 48,
+                        items: 4
+                    }
+                }
+            });
+           
+        let owlPartners = $("#partners-carousel")
+            
+        owlPartners.owlCarousel({
+                loop:true,
+                margin: 0,
+                drag: true,
+                responsiveClass: true,
+                autoHeight: false,
+                smartSpeed: 1000,
+                // lazyLoad:true,
+                nav: true,
+                navText: [$('div#partners-left-arrow'),$('div#partners-right-arrow')],
+                navSpeed:500,
+                rewind:false,
+                slideBy:1,
+                dots: false,
+                responsive: {
+                    
+                    0: {
+                        margin: 24,
+                        items: 1
+                    },
+                    420: {
+                        margin: 24,
+                        items: 2
+                    },
+                    560: {
+                        margin: 24,
+                        items: 3
+                    },
+                    
+                    720: {
+                        margin: 24,
+                        items: 4
+                    }
+                }
+            });
+           
+        
+        </script>
 </body>
 </html>
