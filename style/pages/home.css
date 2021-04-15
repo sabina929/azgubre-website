@@ -2256,6 +2256,24 @@ main section#infos-for-farmers div.products-container {
   padding: 80px 48px 30px 48px;
 }
 
+@media only screen and (max-width: 660px) {
+  main section#infos-for-farmers div.products-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 main section#infos-for-farmers div.products-container article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2274,6 +2292,37 @@ main section#infos-for-farmers div.products-container article {
 
 main section#infos-for-farmers div.products-container article:not(:last-child) {
   margin-right: 120px;
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#infos-for-farmers div.products-container article:not(:last-child) {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#infos-for-farmers div.products-container article:not(:last-child) {
+    margin-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#infos-for-farmers div.products-container article:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  main section#infos-for-farmers div.products-container article:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  main section#infos-for-farmers div.products-container article:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 80px;
+  }
 }
 
 main section#infos-for-farmers div.products-container article div.img-container {
@@ -2322,6 +2371,25 @@ main section#infos-for-farmers div.products-container article a {
   color: #487b2f;
 }
 
+@media only screen and (max-width: 1100px) {
+  main section#infos-for-farmers div.products-container article a {
+    padding: 8px 24px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#infos-for-farmers div.products-container article a {
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  main section#infos-for-farmers div.products-container article a {
+    height: 60px;
+    width: 220px;
+  }
+}
+
 main section#infos-for-farmers div.products-container article a p {
   text-align: center;
   color: #ffffff;
@@ -2336,6 +2404,30 @@ main section#infos-for-farmers div.products-container article a p {
   line-height: 24px;
 }
 
+@media only screen and (max-width: 1100px) {
+  main section#infos-for-farmers div.products-container article a p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#infos-for-farmers div.products-container article a p {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  main section#infos-for-farmers div.products-container article a p {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+}
+
 main section#infos-for-farmers div.products-container article a:hover, main section#infos-for-farmers div.products-container article a:focus {
   background-color: #ffffff;
 }
@@ -2348,9 +2440,53 @@ main section#infos-for-farmers div.products-container article:nth-child(2) a {
   padding: 8px 24px;
 }
 
+@media only screen and (max-width: 1100px) {
+  main section#infos-for-farmers div.products-container article:nth-child(2) a {
+    padding: 8px 16px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#infos-for-farmers div.products-container article:nth-child(2) a {
+    padding: 8px 8px;
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  main section#infos-for-farmers div.products-container article:nth-child(2) a {
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#infos-for-farmers div.products-container article:nth-child(2) a p {
+    width: 84%;
+  }
+}
+
 main section#infos-for-farmers div.products-container article:nth-child(3) a {
   padding: 8px 4px;
   width: 200px;
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#infos-for-farmers div.products-container article:nth-child(3) a {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#infos-for-farmers div.products-container article:nth-child(3) a {
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  main section#infos-for-farmers div.products-container article:nth-child(3) a {
+    width: 220px;
+  }
 }
 
 main section#infos-for-farmers div.products-container article:nth-child(3) a p {

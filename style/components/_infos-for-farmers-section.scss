@@ -29,6 +29,14 @@ main{
         justify-content: center;
         align-items: flex-start;
         padding: 80px 48px 30px 48px;
+        
+        
+        @media only screen and (max-width: 660px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
 
         article{
             display: flex;
@@ -38,6 +46,25 @@ main{
 
             &:not(:last-child){
                 margin-right: 120px;
+                
+                @media only screen and (max-width: 1200px) {
+                    margin-right: 100px;
+                }
+                @media only screen and (max-width: 1100px) {
+                    margin-right: 80px;
+                }
+                
+                @media only screen and (max-width: 900px) {
+                    margin-right: 60px;
+                }
+                @media only screen and (max-width: 800px) {
+                    margin-right: 40px;
+                }
+                @media only screen and (max-width: 660px) {
+                    margin-right: 0px;
+                    margin-bottom: 80px;
+                }
+        
             }
 
             div.img-container{
@@ -69,6 +96,17 @@ main{
                 color: $green-color;
                 
                 
+                @media only screen and (max-width: 1100px) {
+                    padding: 8px 24px;
+                }
+                @media only screen and (max-width: 900px) {
+                    height: 50px;
+                }
+
+                @media only screen and (max-width: 660px) {
+                    height: 60px;
+                    width: 220px;
+                }
                 p{
                     text-align: center;
                     color: $white-color;
@@ -80,6 +118,22 @@ main{
                     transition: all .3s ease;
                     width: 97%;
                     line-height: 24px;
+                    
+                    @media only screen and (max-width: 1100px) {
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: 2px;
+                    }
+                    @media only screen and (max-width: 900px) {
+                        font-size: 14px;
+                        line-height: 18px;
+                        letter-spacing: 1px;
+                    }
+                    @media only screen and (max-width: 660px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                        letter-spacing: 3px;
+                    }
                 }
 
                 &:hover,&:focus{
@@ -94,13 +148,39 @@ main{
             &:nth-child(2){
                 a{
                     padding: 8px 24px;
+                    @media only screen and (max-width: 1100px) {
+                        padding: 8px 16px;
+                        width: 200px;
+                    }
+                    @media only screen and (max-width: 900px) {
+                        padding: 8px 8px;
+                        width: 160px;
+                    }
+                    @media only screen and (max-width: 660px) {
+                        width: 220px;
+                    }
+                    
+                    p{
+                        @media only screen and (max-width: 1100px) {
+                            width: 84%;
+                        }
+                    }
                 }
             }
             &:nth-child(3){
                 a{
                     padding: 8px 4px;
                     width: 200px;
-
+                    
+                    @media only screen and (max-width: 1100px) {
+                        width: 180px;
+                    }
+                    @media only screen and (max-width: 900px) {
+                        width: 160px;
+                    }
+                    @media only screen and (max-width: 660px) {
+                        width: 220px;
+                    }
                     p{
                         width:76%;
                     }
