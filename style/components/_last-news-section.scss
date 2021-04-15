@@ -86,11 +86,51 @@ main{
             div.img-container{
                 width: 100%;
                 margin-bottom: 24px;
+                position: relative;
                 
                 img{
                     width: 100%;
                     height: auto;
 
+                }
+
+                div.overlay{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 60%;
+                    height: 82%;
+                    border-radius: 100px;
+                    border: 1px solid $white-color;
+                    background-color: rgba($white-color, 0.1);
+                    // display: none;
+                    opacity: 0;
+                    transition: all .3s ease;
+                }
+                
+                img.zoom-in-icon{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 32px;
+                    height: 32px;
+                    display: none;
+                    opacity: 0;
+                    transition: all .3s ease;
+                }
+
+                &:hover,&:focus{
+                    div.overlay{
+                        // display: block;
+                        opacity: 1;
+                    }
+                    img.zoom-in-icon{
+                        display: block;
+                        opacity: 1;
+                        cursor: pointer;
+                    }
                 }
             }
 

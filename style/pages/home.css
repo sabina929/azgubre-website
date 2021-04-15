@@ -1458,11 +1458,52 @@ main section#last-news div.news-container article:not(:last-child) {
 main section#last-news div.news-container article div.img-container {
   width: 100%;
   margin-bottom: 24px;
+  position: relative;
 }
 
 main section#last-news div.news-container article div.img-container img {
   width: 100%;
   height: auto;
+}
+
+main section#last-news div.news-container article div.img-container div.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 82%;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main section#last-news div.news-container article div.img-container img.zoom-in-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main section#last-news div.news-container article div.img-container:hover div.overlay, main section#last-news div.news-container article div.img-container:focus div.overlay {
+  opacity: 1;
+}
+
+main section#last-news div.news-container article div.img-container:hover img.zoom-in-icon, main section#last-news div.news-container article div.img-container:focus img.zoom-in-icon {
+  display: block;
+  opacity: 1;
+  cursor: pointer;
 }
 
 main section#last-news div.news-container article div.content-container {
