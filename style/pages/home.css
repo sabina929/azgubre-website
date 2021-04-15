@@ -23,8 +23,8 @@ body {
 .heading-primary {
   position: relative;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  line-height: 48px;
+  font-size: 22px;
+  line-height: 30px;
   letter-spacing: 1.2px;
   font-weight: 500;
   text-align: center;
@@ -79,8 +79,8 @@ body {
 
 .heading-primary.white {
   color: #ffffff;
-  width: 300px;
-  line-height: 36px;
+  width: 210px;
+  line-height: 30px;
 }
 
 .heading-primary.white::before {
@@ -119,8 +119,8 @@ button.btn {
   background-color: transparent;
   padding: 12px 24px;
   border-radius: 60px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
   -webkit-transition: all .3s ease;
@@ -484,9 +484,134 @@ footer#contact.big-screen {
   width: 100vw;
   height: auto;
   margin: 0px;
-  padding: 30px 100px;
+  padding: 48px 150px;
   background-color: #002c7a;
   color: #ffffff;
+}
+
+footer#contact.big-screen div.upper {
+  border-bottom: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 48px;
+}
+
+footer#contact.big-screen div.upper article:nth-child(1) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer#contact.big-screen div.upper article:nth-child(1) img {
+  margin-bottom: 48px;
+}
+
+footer#contact.big-screen div.upper article:nth-child(1) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer#contact.big-screen div.upper article:nth-child(1) div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+}
+
+footer#contact.big-screen div.upper article:nth-child(1) div p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+footer#contact.big-screen div.upper article:nth-child(2), footer#contact.big-screen div.upper article:nth-child(3) {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer#contact.big-screen div.upper article:nth-child(2) nav ul, footer#contact.big-screen div.upper article:nth-child(3) nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer#contact.big-screen div.upper article:nth-child(2) nav ul li, footer#contact.big-screen div.upper article:nth-child(3) nav ul li {
+  list-style: none;
+}
+
+footer#contact.big-screen div.upper article:nth-child(2) nav ul li a, footer#contact.big-screen div.upper article:nth-child(3) nav ul li a {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer#contact.big-screen div.upper article:nth-child(4) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+footer#contact.big-screen div.upper article:not(:last-child) {
+  margin-right: 80px;
 }
 
 /* MEDIA QUERIES STARTS */
@@ -1594,7 +1719,7 @@ main section#infos-for-farmers img.decoration {
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
   top: 154px;
-  right: -13px;
+  right: -33px;
   z-index: -1;
 }
 
@@ -1628,7 +1753,7 @@ main section#infos-for-farmers div.products-container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 64px 48px 24px 48px;
+  padding: 80px 48px 30px 48px;
 }
 
 main section#infos-for-farmers div.products-container article {
@@ -1672,14 +1797,10 @@ main section#infos-for-farmers div.products-container article a {
   text-decoration: none;
   text-align: center;
   width: auto;
-  height: 50px;
+  height: 60px;
   background-color: transparent;
-  padding: 8px 24px;
+  padding: 8px 36px;
   border-radius: 60px;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: unset;
-  letter-spacing: 1px;
   cursor: pointer;
   outline: none;
   -webkit-transition: all .3s ease;
@@ -1704,13 +1825,15 @@ main section#infos-for-farmers div.products-container article a {
 main section#infos-for-farmers div.products-container article a p {
   text-align: center;
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: unset;
   text-align: center;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   width: 97%;
-  line-height: 16px;
+  line-height: 24px;
 }
 
 main section#infos-for-farmers div.products-container article a:hover, main section#infos-for-farmers div.products-container article a:focus {
@@ -1722,16 +1845,16 @@ main section#infos-for-farmers div.products-container article a:hover p, main se
 }
 
 main section#infos-for-farmers div.products-container article:nth-child(2) a {
-  padding: 8px 12px;
+  padding: 8px 24px;
 }
 
 main section#infos-for-farmers div.products-container article:nth-child(3) a {
-  padding: 8px 8px;
-  width: 190px;
+  padding: 8px 4px;
+  width: 200px;
 }
 
 main section#infos-for-farmers div.products-container article:nth-child(3) a p {
-  width: 64%;
+  width: 76%;
 }
 
 main section#our-partners {
@@ -1788,7 +1911,7 @@ main section#our-partners div.partners-container div.left-arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 48px;
+  margin-right: 52px;
 }
 
 main section#our-partners div.partners-container div.partners {
@@ -1812,7 +1935,7 @@ main section#our-partners div.partners-container div.partners article {
 }
 
 main section#our-partners div.partners-container div.partners article:not(:last-child) {
-  margin-right: 48px;
+  margin-right: 52px;
 }
 
 main section#our-partners div.partners-container div.right-arrow {
@@ -1830,7 +1953,7 @@ main section#our-partners div.partners-container div.right-arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 48px;
+  margin-left: 52px;
 }
 
 main section#our-sales-points {
@@ -1892,6 +2015,7 @@ main section#our-sales-points article:nth-child(2) {
 
 main section#our-sales-points article:nth-child(2) h2.heading-primary.white.one-line {
   margin-bottom: 48px;
+  width: auto;
 }
 
 main section#our-sales-points article:nth-child(2) h3 {

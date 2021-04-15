@@ -27,7 +27,7 @@ main{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-right: 48px;
+            margin-right: 52px;
         }
         div.partners{
             display: flex;
@@ -38,7 +38,7 @@ main{
             article{
                 cursor: pointer;
                 &:not(:last-child){
-                    margin-right: 48px;
+                    margin-right: 52px;
                 }
             }
         }
@@ -48,7 +48,7 @@ main{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-left: 48px;
+            margin-left: 52px;
         }
     }
 

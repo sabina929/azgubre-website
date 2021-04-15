@@ -12,7 +12,7 @@ main{
         position: absolute;
         transform: translate(0%, -50%);
         top: 154px;
-        right: -13px;
+        right: -33px;
         z-index: -1;
     }
     div.heading{
@@ -28,7 +28,7 @@ main{
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        padding: 64px 48px 24px 48px;
+        padding: 80px 48px 30px 48px;
 
         article{
             display: flex;
@@ -54,14 +54,10 @@ main{
                 text-decoration: none;
                 text-align: center;
                 width: auto;               
-                height: 50px;
+                height: 60px;
                 background-color: transparent;
-                padding: 8px 24px;
+                padding: 8px 36px;
                 border-radius: 60px;
-                font-size: 16px;
-                font-weight: 500;
-                text-transform: unset;
-                letter-spacing: 1px;
                 cursor: pointer;
                 outline: none;
                 transition: all .3s ease;
@@ -71,17 +67,19 @@ main{
                 align-items: center;
                 border: 1px solid rgba(93, 162, 58, 1);        
                 color: $green-color;
-                               
+                
                 
                 p{
                     text-align: center;
                     color: $white-color;
-                    font-size: 16px;
-                    font-weight: 500;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: 3px;
+                    text-transform: unset;
                     text-align: center;
                     transition: all .3s ease;
                     width: 97%;
-                    line-height: 16px;
+                    line-height: 24px;
                 }
 
                 &:hover,&:focus{
@@ -95,16 +93,16 @@ main{
 
             &:nth-child(2){
                 a{
-                    padding: 8px 12px;
+                    padding: 8px 24px;
                 }
             }
             &:nth-child(3){
                 a{
-                    padding: 8px 8px;
-                    width: 190px;
+                    padding: 8px 4px;
+                    width: 200px;
 
                     p{
-                        width:64%;
+                        width:76%;
                     }
                 }
             }
