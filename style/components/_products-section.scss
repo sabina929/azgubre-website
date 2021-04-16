@@ -61,7 +61,10 @@ main{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 33.33%;
+
+            @media only screen and (max-width: 1420px) {
+                width: 33.33%;
+            }
             @media only screen and (max-width: 1000px) {
                 width: 60%;
             }
@@ -98,8 +101,11 @@ main{
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 24px;
-                width: 100%;
+                // width: auto;
                 
+                @media only screen and (max-width: 1420px) {
+                    width: 100%;
+                }
                 @media only screen and (max-width: 1100px) {
                     padding: 15px;
                 }
@@ -121,7 +127,12 @@ main{
                 }
                 
                 img{
-                    width: 100%;
+                    width: 291px;
+                    height: 291px;
+                    @media only screen and (max-width: 1420px) {
+                        width: 100%;
+                        height: auto;
+                    }
                     @media only screen and (max-width: 460px) {
                         width: 260px;
                         height: 260px;
