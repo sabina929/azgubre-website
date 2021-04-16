@@ -585,6 +585,33 @@ header.small-screen {
           align-items: center;
 }
 
+@media only screen and (max-width: 420px) {
+  header.small-screen {
+    padding: 20px 24px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  header.small-screen > img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  header.small-screen > img {
+    width: 140px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header.small-screen > img {
+    width: 130px;
+    height: auto;
+  }
+}
+
 header.small-screen .menu-btn {
   z-index: 99999;
   width: 46px;
@@ -695,6 +722,18 @@ header.small-screen nav.menu-nav {
   padding: 96px 48px 36px 48px;
 }
 
+@media only screen and (max-width: 420px) {
+  header.small-screen nav.menu-nav {
+    padding: 96px 36px 36px 36px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header.small-screen nav.menu-nav {
+    padding: 96px 24px 24px 24px;
+  }
+}
+
 header.small-screen nav.menu-nav > div {
   width: 100%;
   overflow-y: scroll;
@@ -731,6 +770,12 @@ header.small-screen nav.menu-nav > div ul {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-right: 36px;
+}
+
+@media only screen and (max-width: 420px) {
+  header.small-screen nav.menu-nav > div ul {
+    padding-right: 24px;
+  }
 }
 
 header.small-screen nav.menu-nav > div ul:nth-child(1) {
@@ -773,6 +818,13 @@ header.small-screen nav.menu-nav > div ul li {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  header.small-screen nav.menu-nav > div ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 header.small-screen nav.menu-nav > div ul li a {
   text-decoration: none;
   color: #ffffff;
@@ -791,6 +843,13 @@ header.small-screen nav.menu-nav > div ul li a {
   header.small-screen nav.menu-nav > div ul li a {
     font-size: 16px;
     line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header.small-screen nav.menu-nav > div ul li a {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -880,6 +939,20 @@ header.small-screen nav.menu-nav > div ul li.search form input {
   width: 100%;
 }
 
+@media only screen and (max-width: 465px) {
+  header.small-screen nav.menu-nav > div ul li.search form input {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header.small-screen nav.menu-nav > div ul li.search form input {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 header.small-screen nav.menu-nav > div ul li.search form input::-webkit-input-placeholder {
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -918,6 +991,44 @@ header.small-screen nav.menu-nav > div ul li.search form input::placeholder {
   font-size: 18px;
   line-height: 24px;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 465px) {
+  header.small-screen nav.menu-nav > div ul li.search form input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  header.small-screen nav.menu-nav > div ul li.search form input:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  header.small-screen nav.menu-nav > div ul li.search form input::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  header.small-screen nav.menu-nav > div ul li.search form input::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header.small-screen nav.menu-nav > div ul li.search form input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  header.small-screen nav.menu-nav > div ul li.search form input:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  header.small-screen nav.menu-nav > div ul li.search form input::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  header.small-screen nav.menu-nav > div ul li.search form input::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 header.small-screen nav.menu-nav > div ul li.search form input::-webkit-search-cancel-button {
