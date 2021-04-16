@@ -12,14 +12,17 @@ main{
         width: 100%;
         // height: calc(100vh - 220px); 
         // height: calc(100vh - 164px); 
-        height: calc(100vh - 200px); 
+        // height: calc(100vh - 200px); 
         // height: 100vh; 
-        // height: auto; 
+        height: auto; 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-      
+        
+        @media only screen and (max-width: 900px) {
+            height: calc(100vh - 60px); 
+        }
 
        
         article{
@@ -54,12 +57,44 @@ main{
                 align-items: flex-end;
                 padding: 48px 130px 48px 48px;
                 
+                
+                @media only screen and (max-width: 1420px) {
+                    height: 230px;
+                }
+                @media only screen and (max-width: 1320px) {
+                    padding: 48px 92px 48px 48px;
+                }
+                @media only screen and (max-width: 1240px) {
+                    height: 180px;
+                    padding: 48px 92px 48px 48px;
+                }
+     
+                @media only screen and (max-width: 1100px) {
+                    height: 150px;
+                    padding: 24px 92px 24px 48px;
+                }
+                @media only screen and (max-width: 1000px) {
+                    height: 120px;
+                    padding: 24px 78px 24px 48px;
+                }
+     
+                
                div{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
                 width: 500px;
+                
+                @media only screen and (max-width: 1320px) {
+                    width: 390px;
+                }
+                @media only screen and (max-width: 1100px) {
+                    width: 338px;
+                }
+                @media only screen and (max-width: 1000px) {
+                    width: 282px;
+                }
                 h1.first-line{
                     position: relative;
                     font-family: $font-family-1;
@@ -67,6 +102,19 @@ main{
                     font-weight: 300;
                     color: rgba($white-color, 1);
                     letter-spacing: 3px;
+
+                    @media only screen and (max-width: 1320px) {
+                        font-size: 26px;
+                        letter-spacing: 2px;
+                    }
+                    @media only screen and (max-width: 1100px) {
+                        font-size: 24px;
+                        letter-spacing: 1px;
+                    }
+                    @media only screen and (max-width: 1000px) {
+                        font-size: 20px;
+                        letter-spacing: 0.8px;
+                    }
 
                     &::after{
                         content: '';
@@ -77,6 +125,18 @@ main{
                         height: 1px;
                         width: 157px;
                         background-color: rgba($white-color, 1);
+                        
+                        @media only screen and (max-width: 1320px) {
+                            right: -79%;
+                            width: 115px;
+                        }
+                        @media only screen and (max-width: 1100px) {
+                            width: 98px;
+                        }
+                        @media only screen and (max-width: 1000px) {
+                            right: -82%;
+                            width: 82px;
+                        }
                     }
                 }
                 h1.second-line{
@@ -86,13 +146,27 @@ main{
                     color: rgba($white-color, 1);
                     letter-spacing: 6px;
                     text-transform: uppercase;
+
+                    @media only screen and (max-width: 1320px) {
+                        font-size: 48px;
+                        letter-spacing: 4px;
+                    }
+                    @media only screen and (max-width: 1100px) {
+                        font-size: 44px;
+                        letter-spacing: 2px;
+                    }
+                    @media only screen and (max-width: 1000px) {
+                        font-size: 38px;
+                        letter-spacing: 1px;
+                    }
                 }
                }
             }
             div.overlay-blue{
                 position: absolute;
                 // bottom: 4%;
-                bottom: 1.6%;
+                // bottom: 1.6%;
+                bottom: 5%;
                 right: -1%;
                 transform: translate(-0%,-50%);
                 width: 68%;
@@ -106,6 +180,35 @@ main{
                 align-items: center;
                 padding: 24px 140px 24px 62px;
                 
+                @media only screen and (max-width: 1520px) {
+                    bottom: 3%;
+                }
+                @media only screen and (max-width: 1500px) {
+                    bottom: 2%;
+                }
+                
+                @media only screen and (max-width: 1420px) {
+                    bottom: 4%;
+                    height: 80px;
+                }
+                @media only screen and (max-width: 1360px) {
+                    bottom: 4%;
+                    height: 74px;
+                }
+                
+                @media only screen and (max-width: 1320px) {
+                    bottom: 5%;
+                    height: 64px;
+                    padding: 12px 110px 12px 48px;
+                }
+                @media only screen and (max-width: 1220px) {
+                    padding: 12px 80px 12px 46px;
+                }
+                @media only screen and (max-width: 1100px) {
+                    bottom: 5%;
+                    height: 60px;
+                    padding: 12px 80px 12px 46px;
+                }
                 p{
                     font-family: $font-family-1;
                     font-size: 22px;
@@ -114,6 +217,19 @@ main{
                     letter-spacing: 1px;
                     text-transform: unset;
                     width: 100%;
+
+                    @media only screen and (max-width: 1320px) {
+                        font-size: 20px;
+                        letter-spacing: 0.8px;
+                    }
+                    @media only screen and (max-width: 1100px) {
+                        font-size: 18px;
+                        letter-spacing: 0.6px;
+                    }
+                    @media only screen and (max-width: 1000px) {
+                        font-size: 16px;
+                        letter-spacing: 0.5px;
+                    }
                 }
 
                 div.dots{
@@ -121,8 +237,13 @@ main{
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
-                    width: 60px;
+                    width: 64px;
                     height: 13px;
+                    
+                    @media only screen and (max-width: 1100px) {
+                        width: 54px;
+                        height: 10px;
+                    }
 
                     span{
                         width: 13px;
@@ -134,20 +255,15 @@ main{
                         &.active{
                             background-color: $white-color;
                         }
+
+                        @media only screen and (max-width: 1100px) {
+                            width: 10px;
+                            height: 10px;
+                        }
                     }
                 }
             }
         }
-
-
-
-        // border: $border-check-2;
-
-         
-        // @media only screen and (max-width: 760px) {
-        //     margin: 0px 0px 190px 0px;
-        // }
-     
         
        
     }

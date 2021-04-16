@@ -810,7 +810,7 @@ main {
 
 main section#hero {
   width: 100%;
-  height: calc(100vh - 200px);
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,6 +824,12 @@ main section#hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  main section#hero {
+    height: calc(100vh - 60px);
+  }
 }
 
 main section#hero article {
@@ -872,6 +878,39 @@ main section#hero article div.overlay-green {
   padding: 48px 130px 48px 48px;
 }
 
+@media only screen and (max-width: 1420px) {
+  main section#hero article div.overlay-green {
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  main section#hero article div.overlay-green {
+    padding: 48px 92px 48px 48px;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  main section#hero article div.overlay-green {
+    height: 180px;
+    padding: 48px 92px 48px 48px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-green {
+    height: 150px;
+    padding: 24px 92px 24px 48px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#hero article div.overlay-green {
+    height: 120px;
+    padding: 24px 78px 24px 48px;
+  }
+}
+
 main section#hero article div.overlay-green div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -889,6 +928,24 @@ main section#hero article div.overlay-green div {
   width: 500px;
 }
 
+@media only screen and (max-width: 1320px) {
+  main section#hero article div.overlay-green div {
+    width: 390px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-green div {
+    width: 338px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#hero article div.overlay-green div {
+    width: 282px;
+  }
+}
+
 main section#hero article div.overlay-green div h1.first-line {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -896,6 +953,27 @@ main section#hero article div.overlay-green div h1.first-line {
   font-weight: 300;
   color: white;
   letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 1320px) {
+  main section#hero article div.overlay-green div h1.first-line {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-green div h1.first-line {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#hero article div.overlay-green div h1.first-line {
+    font-size: 20px;
+    letter-spacing: 0.8px;
+  }
 }
 
 main section#hero article div.overlay-green div h1.first-line::after {
@@ -910,6 +988,26 @@ main section#hero article div.overlay-green div h1.first-line::after {
   background-color: white;
 }
 
+@media only screen and (max-width: 1320px) {
+  main section#hero article div.overlay-green div h1.first-line::after {
+    right: -79%;
+    width: 115px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-green div h1.first-line::after {
+    width: 98px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#hero article div.overlay-green div h1.first-line::after {
+    right: -82%;
+    width: 82px;
+  }
+}
+
 main section#hero article div.overlay-green div h1.second-line {
   font-family: "Roboto", sans-serif;
   font-size: 59px;
@@ -919,9 +1017,30 @@ main section#hero article div.overlay-green div h1.second-line {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1320px) {
+  main section#hero article div.overlay-green div h1.second-line {
+    font-size: 48px;
+    letter-spacing: 4px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-green div h1.second-line {
+    font-size: 44px;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#hero article div.overlay-green div h1.second-line {
+    font-size: 38px;
+    letter-spacing: 1px;
+  }
+}
+
 main section#hero article div.overlay-blue {
   position: absolute;
-  bottom: 1.6%;
+  bottom: 5%;
   right: -1%;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
@@ -946,6 +1065,54 @@ main section#hero article div.overlay-blue {
   padding: 24px 140px 24px 62px;
 }
 
+@media only screen and (max-width: 1520px) {
+  main section#hero article div.overlay-blue {
+    bottom: 3%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  main section#hero article div.overlay-blue {
+    bottom: 2%;
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  main section#hero article div.overlay-blue {
+    bottom: 4%;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  main section#hero article div.overlay-blue {
+    bottom: 4%;
+    height: 74px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  main section#hero article div.overlay-blue {
+    bottom: 5%;
+    height: 64px;
+    padding: 12px 110px 12px 48px;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  main section#hero article div.overlay-blue {
+    padding: 12px 80px 12px 46px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-blue {
+    bottom: 5%;
+    height: 60px;
+    padding: 12px 80px 12px 46px;
+  }
+}
+
 main section#hero article div.overlay-blue p {
   font-family: "Roboto", sans-serif;
   font-size: 22px;
@@ -954,6 +1121,27 @@ main section#hero article div.overlay-blue p {
   letter-spacing: 1px;
   text-transform: unset;
   width: 100%;
+}
+
+@media only screen and (max-width: 1320px) {
+  main section#hero article div.overlay-blue p {
+    font-size: 20px;
+    letter-spacing: 0.8px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-blue p {
+    font-size: 18px;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#hero article div.overlay-blue p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
 }
 
 main section#hero article div.overlay-blue div.dots {
@@ -970,8 +1158,15 @@ main section#hero article div.overlay-blue div.dots {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60px;
+  width: 64px;
   height: 13px;
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-blue div.dots {
+    width: 54px;
+    height: 10px;
+  }
 }
 
 main section#hero article div.overlay-blue div.dots span {
@@ -984,6 +1179,13 @@ main section#hero article div.overlay-blue div.dots span {
 
 main section#hero article div.overlay-blue div.dots span.active {
   background-color: #ffffff;
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero article div.overlay-blue div.dots span {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 main section#articles {
@@ -2695,8 +2897,8 @@ main section#infos-for-farmers img.decoration {
 
 @media only screen and (max-width: 600px) {
   main section#infos-for-farmers img.decoration {
-    top: 98px;
-    right: -30px;
+    top: 96px;
+    right: -50px;
     width: 246px;
   }
 }
