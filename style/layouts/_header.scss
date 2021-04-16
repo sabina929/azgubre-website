@@ -281,11 +281,11 @@ header.small-screen {
 
   .menu-btn{
     z-index: 99999;
-    width: 46px;
+    width: 30px;
     
 
     button{
-      width: 46px;
+      width: 30px;
       border: none;
       outline: none;
       background-color: transparent;
@@ -294,7 +294,7 @@ header.small-screen {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       cursor: pointer;
 
       

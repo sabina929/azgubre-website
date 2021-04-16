@@ -614,11 +614,11 @@ header.small-screen {
 
 header.small-screen .menu-btn {
   z-index: 99999;
-  width: 46px;
+  width: 30px;
 }
 
 header.small-screen .menu-btn button {
-  width: 46px;
+  width: 30px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -634,9 +634,9 @@ header.small-screen .menu-btn button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 
@@ -1723,15 +1723,42 @@ main section#hero article div.overlay-green {
 
 @media only screen and (max-width: 1100px) {
   main section#hero article div.overlay-green {
-    height: 150px;
     padding: 24px 92px 24px 48px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   main section#hero article div.overlay-green {
-    height: 120px;
+    height: 200px;
     padding: 24px 78px 24px 48px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  main section#hero article div.overlay-green {
+    width: 80%;
+    padding: 24px 64px 24px 42px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#hero article div.overlay-green {
+    width: 84%;
+    padding: 24px 56px 24px 42px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main section#hero article div.overlay-green {
+    width: 92%;
+    padding: 24px 56px 24px 24px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  main section#hero article div.overlay-green {
+    width: 88%;
+    padding: 24px 24px 24px 24px;
   }
 }
 
@@ -1770,6 +1797,12 @@ main section#hero article div.overlay-green div {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  main section#hero article div.overlay-green div {
+    width: 216px;
+  }
+}
+
 main section#hero article div.overlay-green div h1.first-line {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -1797,6 +1830,13 @@ main section#hero article div.overlay-green div h1.first-line {
   main section#hero article div.overlay-green div h1.first-line {
     font-size: 20px;
     letter-spacing: 0.8px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero article div.overlay-green div h1.first-line {
+    font-size: 18px;
+    letter-spacing: 0.6px;
   }
 }
 
@@ -1832,6 +1872,13 @@ main section#hero article div.overlay-green div h1.first-line::after {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  main section#hero article div.overlay-green div h1.first-line::after {
+    right: -46%;
+    width: 40px;
+  }
+}
+
 main section#hero article div.overlay-green div h1.second-line {
   font-family: "Roboto", sans-serif;
   font-size: 59px;
@@ -1858,6 +1905,13 @@ main section#hero article div.overlay-green div h1.second-line {
 @media only screen and (max-width: 1000px) {
   main section#hero article div.overlay-green div h1.second-line {
     font-size: 38px;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero article div.overlay-green div h1.second-line {
+    font-size: 28px;
     letter-spacing: 1px;
   }
 }
@@ -1937,6 +1991,39 @@ main section#hero article div.overlay-blue {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  main section#hero article div.overlay-blue {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  main section#hero article div.overlay-blue {
+    padding: 12px 60px 12px 46px;
+    width: 78%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  main section#hero article div.overlay-blue {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero article div.overlay-blue {
+    padding: 12px 48px 12px 36px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  main section#hero article div.overlay-blue {
+    padding: 12px 36px 12px 24px;
+    width: 94%;
+  }
+}
+
 main section#hero article div.overlay-blue p {
   font-family: "Roboto", sans-serif;
   font-size: 22px;
@@ -1958,6 +2045,7 @@ main section#hero article div.overlay-blue p {
   main section#hero article div.overlay-blue p {
     font-size: 18px;
     letter-spacing: 0.6px;
+    margin-right: 24px;
   }
 }
 
@@ -1965,6 +2053,18 @@ main section#hero article div.overlay-blue p {
   main section#hero article div.overlay-blue p {
     font-size: 16px;
     letter-spacing: 0.5px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  main section#hero article div.overlay-blue p {
+    margin-right: 36px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  main section#hero article div.overlay-blue p {
+    margin-right: 22px;
   }
 }
 
