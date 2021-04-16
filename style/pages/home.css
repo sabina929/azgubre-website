@@ -682,7 +682,7 @@ header.small-screen nav.menu-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ffffff;
+  background-color: #487b2f;
   -webkit-transition: all 0.6s cubic-bezier(0.77, -0.01, 0.59, 0.87);
   transition: all 0.6s cubic-bezier(0.77, -0.01, 0.59, 0.87);
 }
@@ -739,6 +739,11 @@ header.small-screen nav.menu-nav ul.menu-items li {
           justify-content: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+header.small-screen nav.menu-nav ul.menu-items li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* MEDIA QUERIES STARTS */

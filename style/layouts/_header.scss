@@ -330,7 +330,7 @@ header.small-screen {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $white-color;
+    background-color: $green-color;
     transition: all .6s cubic-bezier(0.77,-0.01, 0.59, 0.87);
 
 
@@ -356,6 +356,11 @@ header.small-screen {
           align-items: flex-start;
           justify-content: center;          
           transition: all 0.5s ease;
+
+          a{
+            text-decoration: none;
+            color: $white-color;
+          }
 
         }
 
