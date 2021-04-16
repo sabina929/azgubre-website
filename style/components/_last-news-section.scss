@@ -11,19 +11,19 @@ main{
     img.decoration{
         position: absolute;
         transform: translate(0%, -50%);
-        top: 220px;
-        right: -37px;
+        // top: 220px;
+        // right: -37px;
+        top: 182px;
+        right: 0px;
         z-index: -1;
 
 
         @media only screen and (max-width: 1100px) {
-            top: 126px;
-            right: -19px;
+            top: 116px;
             width: 340px;
         }
         @media only screen and (max-width: 600px) {
-            top: 95px;
-            right: -56px;
+            top: 87px;
             width: 256px;
         }
     }

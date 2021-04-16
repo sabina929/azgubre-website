@@ -15,9 +15,7 @@ main{
 
     section#hero{
         width: 100%;
-        // height: calc(100vh - 220px); 
-        // height: calc(100vh - 164px); 
-        // height: calc(100vh - 200px); 
+        // height: calc(100vh - 220px);
         // height: 100vh; 
         height: auto; 
         display: flex;
@@ -199,10 +197,8 @@ main{
             }
             div.overlay-blue{
                 position: absolute;
-                // bottom: 4%;
-                // bottom: 1.6%;
                 bottom: 5%;
-                right: -1%;
+                right: 0%;
                 transform: translate(-0%,-50%);
                 width: 68%;
                 height: 90px;

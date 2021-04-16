@@ -11,18 +11,18 @@ main{
     img.decoration{
         position: absolute;
         transform: translate(0%, -50%);
-        top: 154px;
-        right: -33px;
+        // top: 154px;
+        // right: -33px;
+        top: 142px;
+        right: 0px;
         z-index: -1;
 
         @media only screen and (max-width: 1100px) {
-            top: 129px;
-            right: -23px;
+            top: 138px;
             width: 330px;
         }
         @media only screen and (max-width: 600px) {
-            top: 96px;
-            right: -50px;
+            top: 102px;
             width: 246px;
         }
     }
