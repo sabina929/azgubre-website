@@ -330,9 +330,133 @@ header.big-screen div.upper nav ul li.languages {
   cursor: pointer;
 }
 
+header.big-screen div.upper nav ul li.languages:hover, header.big-screen div.upper nav ul li.languages:focus {
+  text-shadow: none;
+}
+
 header.big-screen div.upper nav ul li.languages span {
   margin-left: 12px;
   margin-right: 0px;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: auto;
+  position: relative;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages:hover, header.big-screen div.upper nav ul li.languages div.header-big-screen-languages:focus {
+  text-shadow: none;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.selected {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  width: 40px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.selected:hover, header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.selected:focus {
+  text-shadow: none;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.selected span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.selected span img {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.selected span img.rotate {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.options {
+  position: absolute;
+  width: 40px;
+  height: 0px;
+  top: 190%;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 99999999;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.options.opened {
+  height: 96px;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.options a.option {
+  text-decoration: none;
+  width: 100%;
+  height: 24px;
+  padding: 12px 0px 0px 0px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  letter-spacing: 0.025em;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.options a.option:hover, header.big-screen div.upper nav ul li.languages div.header-big-screen-languages div.options a.option:focus {
+  text-shadow: none;
+  opacity: 0.8;
 }
 
 header.big-screen div.upper nav ul li.search {
@@ -923,6 +1047,127 @@ header.small-screen nav.menu-nav > div ul li.languages {
 header.small-screen nav.menu-nav > div ul li.languages span {
   margin-left: 12px;
   margin-right: 0px;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages:hover, header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages:focus {
+  text-shadow: none;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.selected {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.selected:hover, header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.selected:focus {
+  text-shadow: none;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.selected span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.selected span img {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.selected span img.rotate {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.options {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  top: 132%;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #487b2f;
+  z-index: 99999999;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.options.opened {
+  height: 96px;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.options a.option {
+  text-decoration: none;
+  width: 100%;
+  height: 24px;
+  padding: 12px 0px 0px 0px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  letter-spacing: 0.025em;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.options a.option:hover, header.small-screen nav.menu-nav > div ul li.languages div.header-small-screen-languages div.options a.option:focus {
+  text-shadow: none;
+  opacity: 0.8;
 }
 
 header.small-screen nav.menu-nav > div ul li.search form {

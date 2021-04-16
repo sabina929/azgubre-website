@@ -62,3 +62,50 @@ menuItemLinks.forEach(menuItemLink => {
   })
    
 });
+
+
+// LANGUAGE SELECTION
+// HEADER - BIG SCREEN
+const selectedLanguageContainerHeaderBig = document.querySelector('div.header-big-screen-languages>div.selected');
+const selectedLanguageHeaderBig = document.querySelector('div.header-big-screen-languages>div.selected>p');
+const selectedLanguageDownArrowHeaderBig = document.querySelector('div.header-big-screen-languages>div.selected>span>img');
+const optionsContainerHeaderBig = document.querySelector('div.header-big-screen-languages>div.options');
+const languageOptionsHeaderBig = document.querySelectorAll('div.header-big-screen-languages>div.options>a.option');
+
+
+selectedLanguageContainerHeaderBig.addEventListener('click',openOptionsContainerHeaderBig)
+
+
+function openOptionsContainerHeaderBig(){
+    optionsContainerHeaderBig.classList.toggle('opened')
+    selectedLanguageDownArrowHeaderBig.classList.toggle('rotate')
+}
+
+languageOptionsHeaderBig.forEach(languageOption => {
+    languageOption.addEventListener("click", e => {
+        selectedLanguageHeaderBig.innerHTML = e.target.innerHTML
+    });
+})
+
+
+// HEADER - SMALL SCREEN
+const selectedLanguageContainerHeaderSmall = document.querySelector('div.header-small-screen-languages>div.selected');
+const selectedLanguageHeaderSmall = document.querySelector('div.header-small-screen-languages>div.selected>p');
+const selectedLanguageDownArrowHeaderSmall = document.querySelector('div.header-small-screen-languages>div.selected>span>img');
+const optionsContainerHeaderSmall = document.querySelector('div.header-small-screen-languages>div.options');
+const languageOptionsHeaderSmall = document.querySelectorAll('div.header-small-screen-languages>div.options>a.option');
+
+
+selectedLanguageContainerHeaderSmall.addEventListener('click',openOptionsContainerHeaderSmall)
+
+
+function openOptionsContainerHeaderSmall(){
+    optionsContainerHeaderSmall.classList.toggle('opened')
+    selectedLanguageDownArrowHeaderSmall.classList.toggle('rotate')
+}
+
+languageOptionsHeaderSmall.forEach(languageOption => {
+    languageOption.addEventListener("click", e => {
+        selectedLanguageHeaderSmall.innerHTML = e.target.innerHTML
+    });
+})
