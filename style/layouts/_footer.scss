@@ -25,11 +25,12 @@ footer#contact.big-screen {
        
     }
     @media only screen and (max-width: 420px) {
-        padding: 48px 24px;
+        padding: 48px 24px 36px 24px;
        
     }
 
     div.upper{
+        width: 100%;
         border-bottom: 1px solid $white-color;
         display: flex;
         flex-direction: row;
@@ -41,6 +42,10 @@ footer#contact.big-screen {
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+        }
+
+        @media only screen and (max-width: 520px) {
+            padding-bottom: 36px;
         }
 
         article{
@@ -74,8 +79,35 @@ footer#contact.big-screen {
                     align-items: center;
                     margin-bottom: 48px;
                 }
-                img{
+
+                @media only screen and (max-width: 520px) {
+                    margin-bottom: 36px;
+                }
+                a.logo{
+                    text-decoration: none;
+                    color: $white-color;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     margin-bottom: 48px;
+                    @media only screen and (max-width: 520px) {
+                        margin-bottom: 36px;
+                    }
+                    &>img{
+                        @media only screen and (max-width: 620px) {
+                          width: 150px;
+                          height: auto;
+                        }
+                        @media only screen and (max-width: 520px) {
+                          width: 140px;
+                          height: auto;
+                        }
+                        @media only screen and (max-width: 420px) {
+                          width: 130px;
+                          height: auto;
+                        }
+                      }
                 }
                 div{
                     display: flex;
@@ -150,6 +182,9 @@ footer#contact.big-screen {
                                     margin-right: 0px;
                                     margin-bottom: 24px;
                                 }
+                                @media only screen and (max-width: 520px) {
+                                    margin-bottom: 20px;
+                                }
                             }
                             
                             a{
@@ -209,6 +244,9 @@ footer#contact.big-screen {
                     flex-basis: 100%;
                     margin-bottom: 48px;
                 }
+                @media only screen and (max-width: 520px) {
+                    margin-bottom: 36px;
+                }
             }
             &:nth-child(4){
                 flex-basis: 25%;
@@ -229,6 +267,10 @@ footer#contact.big-screen {
                     text-transform: uppercase;
                     color: $white-color;
                     margin-bottom: 36px;
+
+                    @media only screen and (max-width: 520px) {
+                        margin-bottom: 24px;
+                    }
                 }
                 
                 div.social-icons{
@@ -237,6 +279,10 @@ footer#contact.big-screen {
                     justify-content: flex-start;
                     align-items: flex-start;
                     margin-bottom: 36px;
+
+                    @media only screen and (max-width: 520px) {
+                        margin-bottom: 24px;
+                    }
                     a{
                         text-decoration: none;
                         width: 40px;
@@ -274,6 +320,7 @@ footer#contact.big-screen {
     }
 
     div.lower{
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -285,6 +332,10 @@ footer#contact.big-screen {
             justify-content: flex-start;
             align-items: center;
         }
+
+        @media only screen and (max-width: 520px) {
+            margin-top: 36px;
+        }
         
         p{
             font-family: $font-family-1;
@@ -293,13 +344,22 @@ footer#contact.big-screen {
             line-height: 20px;
             letter-spacing: 0.6px;
             color: $white-color;
-
+            
             @media only screen and (max-width: 880px) {
                 text-align: center;
+            }
+            
+            @media only screen and (max-width: 520px) {
+                font-size: 12px;
+                line-height: 18px;
             }
             &:not(:last-child){
                 @media only screen and (max-width: 940px) {
                     margin-bottom: 24px;
+                }
+
+                @media only screen and (max-width: 520px) {
+                    margin-bottom: 20px;
                 }
             }
         }

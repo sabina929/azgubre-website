@@ -1,6 +1,3 @@
-// const languagesContainer = document.querySelector('li.languages')
-
-
 // NAVIGATION
 // Toggle menu
 const hamburgerMenuButton = document.querySelector('header.small-screen .menu-btn');
@@ -17,7 +14,6 @@ function checkMenuIsOpened(){
         openMenu()
     } else if(isMenuOpened === true){
         closeMenu()
-        // console.log("clicked")
     }
 }
 function openMenu(){
@@ -25,15 +21,13 @@ function openMenu(){
     // console.log("openMenu()", isMenuOpened)
 
     menuIcon.classList.add('opened')
+    
     setTimeout(() => {
       menuContainer.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"           
 
-    }, 20)
-
-
-
-   
+    }, 20)   
 }
+
 function closeMenu(){
     isMenuOpened = false;
     // console.log("closeMenu()", isMenuOpened)
@@ -50,9 +44,7 @@ function closeMenu(){
                 },400)
             },40)
     },120)
-
 }
-
 
 menuItemLinks.forEach(menuItemLink => {
   menuItemLink.addEventListener("click",()=>{
@@ -63,8 +55,13 @@ menuItemLinks.forEach(menuItemLink => {
    
 });
 
+document.addEventListener('click', (e)=>{
+    if(!e.target.closest('header.small-screen')) {
+        closeMenu()
+    }
+})
 
-// LANGUAGE SELECTION
+// LANGUAGE SELECTIONS
 // HEADER - BIG SCREEN
 const selectedLanguageContainerHeaderBig = document.querySelector('div.header-big-screen-languages>div.selected');
 const selectedLanguageHeaderBig = document.querySelector('div.header-big-screen-languages>div.selected>p');
@@ -72,9 +69,7 @@ const selectedLanguageDownArrowHeaderBig = document.querySelector('div.header-bi
 const optionsContainerHeaderBig = document.querySelector('div.header-big-screen-languages>div.options');
 const languageOptionsHeaderBig = document.querySelectorAll('div.header-big-screen-languages>div.options>a.option');
 
-
 selectedLanguageContainerHeaderBig.addEventListener('click',openOptionsContainerHeaderBig)
-
 
 function openOptionsContainerHeaderBig(){
     optionsContainerHeaderBig.classList.toggle('opened')
@@ -87,6 +82,11 @@ languageOptionsHeaderBig.forEach(languageOption => {
     });
 })
 
+document.addEventListener('click', (e)=>{
+    if(!e.target.closest('div.header-big-screen-languages')) {
+        optionsContainerHeaderBig.classList.remove('opened')
+    }
+})
 
 // HEADER - SMALL SCREEN
 const selectedLanguageContainerHeaderSmall = document.querySelector('div.header-small-screen-languages>div.selected');
@@ -95,9 +95,7 @@ const selectedLanguageDownArrowHeaderSmall = document.querySelector('div.header-
 const optionsContainerHeaderSmall = document.querySelector('div.header-small-screen-languages>div.options');
 const languageOptionsHeaderSmall = document.querySelectorAll('div.header-small-screen-languages>div.options>a.option');
 
-
 selectedLanguageContainerHeaderSmall.addEventListener('click',openOptionsContainerHeaderSmall)
-
 
 function openOptionsContainerHeaderSmall(){
     optionsContainerHeaderSmall.classList.toggle('opened')
@@ -110,6 +108,12 @@ languageOptionsHeaderSmall.forEach(languageOption => {
     });
 })
 
+document.addEventListener('click', (e)=>{
+    if(!e.target.closest('div.header-small-screen-languages')) {
+        optionsContainerHeaderSmall.classList.remove('opened')
+    }
+})
+
 // SALES POINT SELECTION
 const selectedPointContainer = document.querySelector('section#our-sales-points div.dropdown>div.selected');
 const selectedPoint = document.querySelector('section#our-sales-points div.dropdown>div.selected>p');
@@ -117,9 +121,7 @@ const selectedPointDownArrow = document.querySelector('section#our-sales-points 
 const pointOptionsContainer = document.querySelector('section#our-sales-points div.dropdown>div.options');
 const pointOptions = document.querySelectorAll('section#our-sales-points div.dropdown>div.options>a.option');
 
-
 selectedPointContainer.addEventListener('click',openPointOptionsContainer)
-
 
 function openPointOptionsContainer(){
   pointOptionsContainer.classList.toggle('opened')
@@ -130,4 +132,11 @@ pointOptions.forEach(pointOption => {
     pointOption.addEventListener("click", e => {
       selectedPoint.innerHTML = e.target.innerHTML
     });
+})
+
+
+document.addEventListener('click', (e)=>{
+    if(!e.target.closest('section#our-sales-points div.dropdown')) {
+        pointOptionsContainer.classList.remove('opened')
+    }
 })

@@ -359,18 +359,27 @@ header.small-screen {
     padding: 20px 24px;
   }
 
-  &>img{
-    @media only screen and (max-width: 620px) {
-      width: 150px;
-      height: auto;
-    }
-    @media only screen and (max-width: 520px) {
-      width: 140px;
-      height: auto;
-    }
-    @media only screen and (max-width: 420px) {
-      width: 130px;
-      height: auto;
+
+  &>a.logo{
+    text-decoration: none;
+    color: $white-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &>img{
+      @media only screen and (max-width: 620px) {
+        width: 150px;
+        height: auto;
+      }
+      @media only screen and (max-width: 520px) {
+        width: 140px;
+        height: auto;
+      }
+      @media only screen and (max-width: 420px) {
+        width: 130px;
+        height: auto;
+      }
     }
   }
 
