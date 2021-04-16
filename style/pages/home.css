@@ -1358,13 +1358,20 @@ footer#contact.big-screen div.upper article:nth-child(2) nav ul li, footer#conta
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 footer#contact.big-screen div.upper article:nth-child(2) nav ul li:not(:last-child), footer#contact.big-screen div.upper article:nth-child(3) nav ul li:not(:last-child) {
-  margin-right: 24px;
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 1054px) {
+  footer#contact.big-screen div.upper article:nth-child(2) nav ul li:not(:last-child), footer#contact.big-screen div.upper article:nth-child(3) nav ul li:not(:last-child) {
+    margin-bottom: 0px;
+    margin-right: 24px;
+  }
 }
 
 @media only screen and (max-width: 940px) {
