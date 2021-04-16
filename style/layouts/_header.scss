@@ -242,7 +242,8 @@ header.big-screen {
 
 /* HEADER FOR SMALL SCREENS */
 header.small-screen {
-  position: absolute;
+  position: fixed;
+  // position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -298,16 +299,22 @@ header.small-screen {
             transform: translate(0px, 4px) rotate(45deg);
 
             &.two{
-              transform: translate(-15px, -6px) rotate(-45deg);
+              opacity: 0;
+            }
+            &.three{
+              transform: translate(0px, -10px) rotate(-45deg);
             }
           }
         }
         &.opened{
           div{
             transform: translate(0px, 4px) rotate(45deg);
-
             &.two{
-              transform: translate(-15px, -6px) rotate(-45deg);
+              opacity: 0;
+            }
+
+            &.three{
+              transform: translate(0px, -10px) rotate(-45deg);
             }
           }
         }
@@ -318,14 +325,14 @@ header.small-screen {
   nav.menu-nav{
     position: fixed;
     top: 0%;
-    left: 0%;
+    // left: 0%;
     right: 0%;
     bottom: 0%;
-    // clip-path: circle(0% at 50% 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     // display: none;
     height: 100vh;
-    width: 101vw;
+    width: 75vw;
     display: flex;
     flex-direction: column;
     align-items: center;
