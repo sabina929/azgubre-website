@@ -2131,6 +2131,12 @@ main section#hero article div.overlay-green {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  main section#hero article div.overlay-green {
+    height: 164px;
+  }
+}
+
 main section#hero article div.overlay-green div {
   display: -webkit-box;
   display: -ms-flexbox;
