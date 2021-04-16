@@ -686,51 +686,37 @@ header.small-screen nav.menu-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #487b2f;
   -webkit-transition: all 0.6s cubic-bezier(0.77, -0.01, 0.59, 0.87);
   transition: all 0.6s cubic-bezier(0.77, -0.01, 0.59, 0.87);
+  padding: 96px 48px 36px 48px;
 }
 
-header.small-screen nav.menu-nav ul {
+header.small-screen nav.menu-nav > div {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header.small-screen nav.menu-nav > div::-webkit-scrollbar {
+  width: 10px;
+}
+
+header.small-screen nav.menu-nav > div::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+header.small-screen nav.menu-nav > div::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+header.small-screen nav.menu-nav > div ul {
+  width: 100%;
   list-style: none;
-}
-
-header.small-screen nav.menu-nav ul.menu-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media only screen and (max-width: 760px) {
-  header.small-screen nav.menu-nav ul.menu-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-header.small-screen nav.menu-nav ul.menu-items li {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,16 +727,227 @@ header.small-screen nav.menu-nav ul.menu-items li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-right: 36px;
+}
+
+header.small-screen nav.menu-nav > div ul:nth-child(1) {
+  margin-bottom: 12px;
+}
+
+header.small-screen nav.menu-nav > div ul li {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0px 18px 0px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  height: auto;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+@media only screen and (max-width: 465px) {
+  header.small-screen nav.menu-nav > div ul li {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+header.small-screen nav.menu-nav > div ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  height: 100%;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+@media only screen and (max-width: 465px) {
+  header.small-screen nav.menu-nav > div ul li a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+header.small-screen nav.menu-nav > div ul li a.youtube {
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-header.small-screen nav.menu-nav ul.menu-items li a {
-  text-decoration: none;
+header.small-screen nav.menu-nav > div ul li a.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.small-screen nav.menu-nav > div ul li.weather {
+  cursor: pointer;
+}
+
+header.small-screen nav.menu-nav > div ul li.weather span {
+  margin-left: 12px;
+  margin-right: 0px;
+}
+
+header.small-screen nav.menu-nav > div ul li.languages {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header.small-screen nav.menu-nav > div ul li.languages span {
+  margin-left: 12px;
+  margin-right: 0px;
+}
+
+header.small-screen nav.menu-nav > div ul li.search form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+header.small-screen nav.menu-nav > div ul li.search form input {
+  height: 100%;
+  background-color: #487b2f;
+  border: none;
+  outline: none;
   color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  width: 100%;
+}
+
+header.small-screen nav.menu-nav > div ul li.search form input::-webkit-input-placeholder {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+header.small-screen nav.menu-nav > div ul li.search form input:-ms-input-placeholder {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+header.small-screen nav.menu-nav > div ul li.search form input::-ms-input-placeholder {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+header.small-screen nav.menu-nav > div ul li.search form input::placeholder {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+header.small-screen nav.menu-nav > div ul li.search form input::-webkit-search-cancel-button {
+  display: none;
+}
+
+header.small-screen nav.menu-nav > div ul li.search form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-color: #487b2f;
 }
 
 /* MEDIA QUERIES STARTS */

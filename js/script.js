@@ -6,13 +6,12 @@
 const hamburgerMenuButton = document.querySelector('header.small-screen .menu-btn');
 const menuContainer = document.querySelector('header.small-screen nav.menu-nav');
 const menuItemLinks = document.querySelectorAll('header.small-screen nav.menu-nav ul li>a');
-
 const menuIcon = document.querySelector('header.small-screen .menu-btn .menu-icon');
-
 
 let isMenuOpened = false;
 
 hamburgerMenuButton.addEventListener("click", checkMenuIsOpened);
+
 function checkMenuIsOpened(){
     if(isMenuOpened === false){
         openMenu()
@@ -23,10 +22,8 @@ function checkMenuIsOpened(){
 }
 function openMenu(){
     isMenuOpened = true;
-    console.log("openMenu()", isMenuOpened)
+    // console.log("openMenu()", isMenuOpened)
 
-    // menuContainer.style.display = "flex"
-    // menuContainer.style.transform = "translate(-50%, 0px)"
     menuIcon.classList.add('opened')
     setTimeout(() => {
       menuContainer.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"           
@@ -39,29 +36,21 @@ function openMenu(){
 }
 function closeMenu(){
     isMenuOpened = false;
-    console.log("closeMenu()", isMenuOpened)
+    // console.log("closeMenu()", isMenuOpened)
 
-    // menuList.classList.remove("menu-items-appear");
-    menuIcon.classList.remove('clicked')
+    menuIcon.classList.remove('clicked') 
 
-    // menuItemLink1.parentNode.classList.remove('opened')
-    
     setTimeout(() => {
-      
-     
-
-              setTimeout(() => {
+            setTimeout(() => {
 
                 menuIcon.classList.remove('opened')
                 setTimeout(() => {
                 menuContainer.style.clipPath = "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"       
            
                 },400)
-              },40)
-      
+            },40)
     },120)
 
-  
 }
 
 

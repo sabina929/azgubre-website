@@ -280,7 +280,6 @@ header.small-screen {
 
       
       .menu-icon{
-        // border: $border-check-2;
         width: 30px;
         height: 16px;
         display: flex;
@@ -325,10 +324,8 @@ header.small-screen {
   nav.menu-nav{
     position: fixed;
     top: 0%;
-    // left: 0%;
     right: 0%;
     bottom: 0%;
-    // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     // display: none;
     height: 100vh;
@@ -336,43 +333,176 @@ header.small-screen {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: $green-color;
     transition: all .6s cubic-bezier(0.77,-0.01, 0.59, 0.87);
+    padding: 96px 48px 36px 48px;
 
+    &>div{
+      width: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
 
-    ul {
-      list-style: none;
-
-      &.menu-items{
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: rgba($white-color,0);
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        border-radius: 12px;
+        background: rgba($white-color,0.2);
+      }
+      ul {
+        width: 100%;
+        list-style: none;
         display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-
-          @media only screen and (max-width: 760px) {
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 36px;
+        &:nth-child(1){
+          
+          margin-bottom: 12px;
         }
-   
+        
         li{
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;          
-          transition: all 0.5s ease;
-
-          a{
-            text-decoration: none;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;         
+            padding: 18px 0px 18px 0px;
             color: $white-color;
+            font-family: $font-family-1;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            // height: 60px;
+            height: auto;
+            transition: all .1s linear;
+
+            @media only screen and (max-width: 465px) {
+              font-size: 16px;
+              line-height: 22px;
+            }
+            
+            a{
+              text-decoration: none;
+              color: $white-color;
+              font-family: $font-family-1;
+              font-size: 18px;
+              line-height: 24px;
+              font-weight: 300;
+              text-transform: uppercase;
+              letter-spacing: 0.5px;
+              height: 100%;
+              transition: all .1s linear;
+
+              @media only screen and (max-width: 465px) {
+                font-size: 16px;
+                line-height: 22px;
+              }
+
+              &.youtube{
+                margin-right: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;  
+              }
+              &.instagram{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;  
+              }
+            }
+            
+            &.weather{
+              cursor: pointer;
+              span{
+                margin-left: 12px;
+                margin-right: 0px;
+              }
+            }
+            &.languages{
+              cursor: pointer;
+              border-bottom: 1px solid rgba($white-color,0.5);
+              span{
+                margin-left: 12px;
+                margin-right: 0px;
+              }
+            }
+            
+            &.search{
+              form{
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                
+                input{
+                  height: 100%;
+                  background-color: $green-color;
+                  border: none;
+                  outline: none;
+                  color: $white-color;
+                  text-transform: uppercase;
+                  letter-spacing: 0.5px;
+                  font-family: $font-family-1;
+                  font-size: 18px;
+                  line-height: 24px;
+                  font-weight: 300;
+                  width: 100%;
+                  
+                  &::placeholder{
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: $white-color;
+                    font-family: $font-family-1;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 300;
+                  }
+
+                  &::-webkit-search-cancel-button{
+                    display: none;
+                  }
+                }
+
+                button{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  top: 50%;
+                  right: -6px;
+                  transform: translate(-50%,-50%);
+                  cursor: pointer;
+                  border: none;
+                  outline: none;
+                  background-color: transparent;
+                  background-color: $green-color;
+                }
+              }
+            }
+  
           }
-
-        }
-
+  
+        
       }
     }
+    
   }
 }
 
