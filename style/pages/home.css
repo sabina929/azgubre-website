@@ -5110,6 +5110,7 @@ main section#our-sales-points article:nth-child(2) div.dropdown-container div.dr
           align-items: center;
   padding: 6px 24px;
   cursor: pointer;
+  position: relative;
 }
 
 @media only screen and (max-width: 460px) {
@@ -5126,5 +5127,112 @@ main section#our-sales-points article:nth-child(2) div.dropdown-container div.dr
   letter-spacing: 1px;
   margin-bottom: 0px;
   text-align: left;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.selected {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.selected span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.selected span img {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.selected span img.rotate {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.options {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 0px;
+  top: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.options.opened {
+  height: 130px;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.options a.option {
+  text-decoration: none;
+  width: 100%;
+  height: 24px;
+  padding: 24px 24px 8px 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #002c7a;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.options a.option:first-child {
+  padding-top: 36px;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.options a.option:last-child {
+  padding-top: 24px;
+}
+
+main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.options a.option:hover, main section#our-sales-points article:nth-child(2) div.dropdown-container div.dropdown div.options a.option:focus {
+  opacity: 0.8;
 }
 /*# sourceMappingURL=home.css.map */

@@ -109,3 +109,25 @@ languageOptionsHeaderSmall.forEach(languageOption => {
         selectedLanguageHeaderSmall.innerHTML = e.target.innerHTML
     });
 })
+
+// SALES POINT SELECTION
+const selectedPointContainer = document.querySelector('section#our-sales-points div.dropdown>div.selected');
+const selectedPoint = document.querySelector('section#our-sales-points div.dropdown>div.selected>p');
+const selectedPointDownArrow = document.querySelector('section#our-sales-points div.dropdown>div.selected>span>img');
+const pointOptionsContainer = document.querySelector('section#our-sales-points div.dropdown>div.options');
+const pointOptions = document.querySelectorAll('section#our-sales-points div.dropdown>div.options>a.option');
+
+
+selectedPointContainer.addEventListener('click',openPointOptionsContainer)
+
+
+function openPointOptionsContainer(){
+  pointOptionsContainer.classList.toggle('opened')
+  selectedPointDownArrow.classList.toggle('rotate')
+}
+
+pointOptions.forEach(pointOption => {
+    pointOption.addEventListener("click", e => {
+      selectedPoint.innerHTML = e.target.innerHTML
+    });
+})
