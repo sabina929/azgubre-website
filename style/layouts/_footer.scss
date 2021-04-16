@@ -7,6 +7,27 @@ footer#contact.big-screen {
     padding: 48px 150px;
     background-color: $blue-color;
     color: $white-color;
+    
+    @media only screen and (max-width: 1480px) {
+        padding: 48px 120px;
+       
+    }
+    @media only screen and (max-width: 1375px) {
+        padding: 48px 100px;
+       
+    }
+    @media only screen and (max-width: 1335px) {
+        padding: 48px 80px;
+       
+    }
+    @media only screen and (max-width: 880px) {
+        padding: 48px 48px;
+       
+    }
+    @media only screen and (max-width: 420px) {
+        padding: 48px 24px;
+       
+    }
 
     div.upper{
         border-bottom: 1px solid $white-color;
@@ -16,9 +37,26 @@ footer#contact.big-screen {
         align-items: flex-start;
         padding-bottom: 48px;
 
+        @media only screen and (max-width: 1054px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
         article{
             &:not(:last-child){
                 margin-right: 80px;
+                
+                @media only screen and (max-width: 1335px) {
+                    margin-right: 60px;                   
+                }
+                @media only screen and (max-width: 1220px) {
+                    margin-right: 20px;                   
+                }
+                @media only screen and (max-width: 1054px) {
+                    margin-right: 0px; 
+                    margin-bottom: 36px; 
+                }
             }
 
             &:nth-child(1){
@@ -27,6 +65,15 @@ footer#contact.big-screen {
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
+
+                @media only screen and (max-width: 1135px) {
+                    flex-basis: 25%;
+                }
+                @media only screen and (max-width: 1054px) {
+                    flex-basis: 100%;
+                    align-items: center;
+                    margin-bottom: 48px;
+                }
                 img{
                     margin-bottom: 48px;
                 }
@@ -35,13 +82,20 @@ footer#contact.big-screen {
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: flex-start;
-
+                    
+                    @media only screen and (max-width: 1054px) {
+                        align-items: center;
+                    }
                     p{
                         font-family: $font-family-1;
                         font-size: 15px;
                         font-weight: 300;
                         letter-spacing: 0.6px;
                         color: $white-color;
+
+                        @media only screen and (max-width: 1054px) {
+                            text-align: center;
+                        }
 
                         &:not(:last-child){
                             margin-bottom: 8px;
@@ -50,19 +104,14 @@ footer#contact.big-screen {
                 }
             }
 
-            &:nth-child(2){
-                margin-right: 0px;
-            }
-            
-            &:nth-child(3){
-                margin-right: 160px;
-            }
+          
             &:nth-child(2),&:nth-child(3){
                 flex-basis: 22.5%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
+            
 
                 nav{
                     ul{
@@ -70,9 +119,35 @@ footer#contact.big-screen {
                         flex-direction: column;
                         justify-content: flex-start;
                         align-items: flex-start;
+
+                        @media only screen and (max-width: 1054px) {
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: flex-start;
+                        }
+                        @media only screen and (max-width: 880px) {
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
                         li{
                             list-style: none;
-
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            &:not(:last-child){
+                                margin-right: 24px;
+                                
+                                @media only screen and (max-width: 940px) {
+                                    margin-right: 18px;
+                                }
+                                @media only screen and (max-width: 880px) {
+                                    margin-right: 0px;
+                                    margin-bottom: 24px;
+                                }
+                            }
+                            
                             a{
                                 color: $white-color;
                                 font-family: $font-family-1;
@@ -82,16 +157,53 @@ footer#contact.big-screen {
                                 text-decoration: none;
                                 text-transform: uppercase;
                                 transition: all .1s linear;
+                                
+                                @media only screen and (max-width: 880px) {
+                                    text-align: center;
+                                }
 
                                 &:hover,&:focus{
                                     text-shadow: 0.7px 0px white;
-                                  }
-                                  a:active{
+                                }
+                                a:active{
                                     text-shadow: 0.7px 0px white;
-                                  }
+                                }
                             }
                         }
                     }
+                }
+            }
+            &:nth-child(2){
+                margin-right: 0px;
+                @media only screen and (max-width: 1220px) {
+                    flex-basis: 20%;
+                }
+                @media only screen and (max-width: 1135px) {
+                    flex-basis: 15%;
+                }
+                @media only screen and (max-width: 1054px) {
+                    flex-basis: 100%;
+                }
+            }
+            
+            &:nth-child(3){
+                margin-right: 160px;
+                @media only screen and (max-width: 1335px) {
+                    margin-right: 100px;                   
+                }
+                @media only screen and (max-width: 1220px) {
+                    margin-right: 80px;                   
+                }
+                @media only screen and (max-width: 1135px) {
+                    margin-right: 60px;                   
+                }
+                @media only screen and (max-width: 1054px) {
+                    margin-right: 0px; 
+                    margin-bottom: 36px; 
+                }
+                @media only screen and (max-width: 1054px) {
+                    flex-basis: 100%;
+                    margin-bottom: 48px;
                 }
             }
             &:nth-child(4){
@@ -101,6 +213,10 @@ footer#contact.big-screen {
                 justify-content: flex-start;
                 align-items: flex-start;
 
+                @media only screen and (max-width: 1054px) {
+                    flex-basis: 100%;
+                    align-items: center;
+                }
                 p.follow-us{
                     font-family: $font-family-1;
                     font-size: 12px;
@@ -160,12 +276,28 @@ footer#contact.big-screen {
         align-items: center;
         margin-top: 48px;
 
+        @media only screen and (max-width: 940px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
         p{
             font-family: $font-family-1;
             font-size: 14px;
             font-weight: 300;
+            line-height: 20px;
             letter-spacing: 0.6px;
             color: $white-color;
+
+            @media only screen and (max-width: 880px) {
+                text-align: center;
+            }
+            &:not(:last-child){
+                @media only screen and (max-width: 940px) {
+                    margin-bottom: 24px;
+                }
+            }
         }
 
     }

@@ -346,7 +346,6 @@ header.small-screen {
     right: 0%;
     bottom: 0%;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    // display: none;
     height: 100vh;
     width: 75vw;
     display: flex;
@@ -412,7 +411,6 @@ header.small-screen {
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            // height: 60px;
             height: auto;
             transition: all .1s linear;
 
@@ -446,6 +444,10 @@ header.small-screen {
                 font-size: 14px;
                 line-height: 20px;
               }
+              &:hover,&:focus{
+                text-shadow: 0.7px 0px white;
+              }
+             
 
               &.youtube{
                 margin-right: 12px;
@@ -460,6 +462,18 @@ header.small-screen {
                 justify-content: center;
                 align-items: center;  
               }
+            }
+            &.active{
+              text-shadow: 0.7px 0px white;
+              a{
+                text-shadow: 0.7px 0px white;
+              }
+            }
+            &:hover,&:focus{
+              text-shadow: 0.7px 0px white;
+            }
+            a:active{
+              text-shadow: 0.7px 0px white;
             }
             
             &.weather{
@@ -552,7 +566,7 @@ header.small-screen {
                 }
               }
             }
-  
+            
           }
   
         
