@@ -119,7 +119,42 @@ const selectedPointContainer = document.querySelector('section#our-sales-points 
 const selectedPoint = document.querySelector('section#our-sales-points div.dropdown>div.selected>p');
 const selectedPointDownArrow = document.querySelector('section#our-sales-points div.dropdown>div.selected>span>img');
 const pointOptionsContainer = document.querySelector('section#our-sales-points div.dropdown>div.options');
-const pointOptions = document.querySelectorAll('section#our-sales-points div.dropdown>div.options>a.option');
+// const pointOptions = document.querySelectorAll('section#our-sales-points div.dropdown>div.options>a.option');
+const pointOptions = document.querySelectorAll('section#our-sales-points div.dropdown>div.options>p.option');
+
+const tooltip = document.querySelector('.location-tooltip');
+const tooltipHeading = document.querySelector('.location-tooltip div.location-info>h4');
+const tooltipAddress = document.querySelector('.location-tooltip div.location-info>div>p.address>span');
+const tooltipPhoneNumber = document.querySelector('.location-tooltip div.location-info>div>p.phone>span');
+const mapPaths = document.querySelectorAll('section#our-sales-points>article>div.map-container>svg>g>path');
+const mapContainer = document.querySelector('section#our-sales-points>article>div.map-container');
+
+let districtsArr = [
+    {
+        id: 'AZE1690',
+        name: 'Abşeron',
+        address: 'Abşeron, Azərbaycan',
+        phoneNumber: '055 355 35 35'
+    },
+    {
+        id: 'AZE1698',
+        name: 'Biləsuvar',
+        address: 'Biləsuvar, Azərbaycan',
+        phoneNumber: '055 495 49 49'
+    },
+    {
+        id: 'AZE1700',
+        name: 'Cəlilabad',
+        address: 'Cəlilabad, Azərbaycan',
+        phoneNumber: '055 535 53 53'
+    },
+    {
+        id: 'AZE1711',
+        name: 'Qobustan',
+        address: 'Qobustan, Azərbaycan',
+        phoneNumber: '055 285 28 28'
+    },
+]
 
 selectedPointContainer.addEventListener('click',openPointOptionsContainer)
 
@@ -129,11 +164,74 @@ function openPointOptionsContainer(){
 }
 
 pointOptions.forEach(pointOption => {
-    pointOption.addEventListener("click", e => {
-      selectedPoint.innerHTML = e.target.innerHTML
-    });
+    pointOption.addEventListener("click", getTooltipLocationOnSelection);
 })
 
+
+function getTooltipLocationOnSelection(e){
+    
+        selectedPoint.innerHTML = e.target.innerHTML
+        let selectedDistrict = districtsArr.filter(district => district.id === e.target.dataset.districtid)
+        //   console.log(selectedDistrict)
+        mapPaths.forEach(function(item) {  
+            
+            item.classList.remove('active')
+            if(item.id === selectedDistrict[0].id){
+                item.classList.add('active')
+                // pos = item.getBBox()
+                tooltipHeading.innerHTML = selectedDistrict[0].name
+                tooltipAddress.innerHTML = selectedDistrict[0].address
+                tooltipPhoneNumber.innerHTML = selectedDistrict[0].phoneNumber
+                
+                if(selectedDistrict[0].name === 'Abşeron'){
+                    let mapContainerPos = mapContainer.getBoundingClientRect()
+                    let pos = item.getBoundingClientRect()
+                    tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
+                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
+                    // console.log(pos)
+                }
+                if(selectedDistrict[0].name === 'Biləsuvar'){
+                    let mapContainerPos = mapContainer.getBoundingClientRect()
+                    let pos = item.getBoundingClientRect()
+                    tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
+                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
+                    // console.log(pos)
+                }
+                if(selectedDistrict[0].name === 'Cəlilabad'){
+                    let mapContainerPos = mapContainer.getBoundingClientRect()
+                    let pos = item.getBoundingClientRect()
+                    tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
+                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
+                    console.log(pos)
+                }
+                if(selectedDistrict[0].name === 'Qobustan'){
+                    console.log(mapContainer.getBoundingClientRect())
+                    let mapContainerPos = mapContainer.getBoundingClientRect()
+                    let pos = item.getBoundingClientRect()
+                    tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
+                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
+                    console.log(pos)
+                }
+            }
+        });    
+}
+
+    mapPaths.forEach(function(item) {  
+        item.classList.remove('active')
+        if(item.id === 'AZE1711'){
+            item.classList.add('active')
+            tooltipHeading.innerHTML = districtsArr[3].name
+            tooltipAddress.innerHTML = districtsArr[3].address
+            tooltipPhoneNumber.innerHTML = districtsArr[3].phoneNumber
+            if(tooltipHeading.innerHTML === 'Qobustan'){
+                let mapContainerPos = mapContainer.getBoundingClientRect()
+                let pos = item.getBoundingClientRect()
+                tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
+                tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
+                // console.log('executed')
+            }
+        }
+    });
 
 document.addEventListener('click', (e)=>{
     if(!e.target.closest('section#our-sales-points div.dropdown')) {
