@@ -183,34 +183,17 @@ function getTooltipLocationOnSelection(e){
                 tooltipAddress.innerHTML = selectedDistrict[0].address
                 tooltipPhoneNumber.innerHTML = selectedDistrict[0].phoneNumber
                 
+                let mapContainerPos = mapContainer.getBoundingClientRect()
+                let pos = item.getBoundingClientRect()
+                tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
+                tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
+
                 if(selectedDistrict[0].name === 'Abşeron'){
-                    let mapContainerPos = mapContainer.getBoundingClientRect()
-                    let pos = item.getBoundingClientRect()
-                    tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
-                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
+                    // let mapContainerPos = mapContainer.getBoundingClientRect()
+                    // let pos = item.getBoundingClientRect()
+                    // tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
+                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) - 8 + 'px';
                     // console.log(pos)
-                }
-                if(selectedDistrict[0].name === 'Biləsuvar'){
-                    let mapContainerPos = mapContainer.getBoundingClientRect()
-                    let pos = item.getBoundingClientRect()
-                    tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
-                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
-                    // console.log(pos)
-                }
-                if(selectedDistrict[0].name === 'Cəlilabad'){
-                    let mapContainerPos = mapContainer.getBoundingClientRect()
-                    let pos = item.getBoundingClientRect()
-                    tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
-                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
-                    console.log(pos)
-                }
-                if(selectedDistrict[0].name === 'Qobustan'){
-                    console.log(mapContainer.getBoundingClientRect())
-                    let mapContainerPos = mapContainer.getBoundingClientRect()
-                    let pos = item.getBoundingClientRect()
-                    tooltip.style.top = (pos.top - mapContainerPos.top + pos.height/2) + 'px';
-                    tooltip.style.left = (pos.left -mapContainerPos.left + pos.width/2) + 'px';
-                    console.log(pos)
                 }
             }
         });    
